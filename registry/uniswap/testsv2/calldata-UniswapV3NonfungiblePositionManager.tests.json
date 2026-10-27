@@ -868,6 +868,154 @@
           }
         ]
       }
+    },
+    {
+      "description": "Unwrap WETH held by the position manager - chain 8453",
+      "rawTx": "0x02f86f82210582047d831312d083aba950830493e09403a520b32c04bf3beef7beb72e919cf822ed34f180b84449404b7c00000000000000000000000000000000000000000000000000470c6252b0fc0c00000000000000000000000061e438a86b1de6a2337b0088a8a3290f066d53f6c0",
+      "from": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+      "expected": {
+        "intent": "Unwrap to native token",
+        "interpolatedIntent": "Unwrap at least 0.019998339780115468 ETH to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Min amount",
+            "value": "0.019998339780115468 ETH"
+          },
+          {
+            "label": "Recipient",
+            "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Send USDC held by the position manager - chain 8453",
+      "rawTx": "0x02f88f82210582047d831312d083aba950830493e09403a520b32c04bf3beef7beb72e919cf822ed34f180b864df2ab5bb000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda0291300000000000000000000000000000000000000000000000000000000033aab2000000000000000000000000061e438a86b1de6a2337b0088a8a3290f066d53f6c0",
+      "from": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+      "expected": {
+        "intent": "Send tokens",
+        "interpolatedIntent": "Send at least 54.176544 USDC to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Min amount",
+            "value": "54.176544 USDC"
+          },
+          {
+            "label": "Recipient",
+            "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Refund unused ETH - chain 8453",
+      "rawTx": "0x02ee82210582047e831312d083aba950830493e09403a520b32c04bf3beef7beb72e919cf822ed34f1808412210e8ac0",
+      "from": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+      "expected": {
+        "intent": "Refund unused native token",
+        "interpolatedIntent": "Refund unused native token to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Recipient",
+            "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Create WETH/TAG pool - chain 1",
+      "rawTx": "0x02f8af018214e8843b9aca00843fcfaa96830493e094c36442b4a4522e871399cd717abdd847ab11fe8880b88413ead562000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000d3d67a5d353d2f17b797699be8643165320f01250000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000008bc0bc33d98dd5b602a1d7cd80fc0",
+      "from": "0x2F0F35765563Ba038BA80ffB80d76Eb6106B946A",
+      "expected": {
+        "intent": "Create pool",
+        "interpolatedIntent": "Create a 0.3% pool for WETH and TAG",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Token 0",
+            "value": "WETH"
+          },
+          {
+            "label": "Token 1",
+            "value": "TAG"
+          },
+          {
+            "label": "Fee tier",
+            "value": "0.3%"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Transfer position with transferFrom - chain 8453",
+      "rawTx": "0x02f890822105820663839e464f8401d4040d830493e09403a520b32c04bf3beef7beb72e919cf822ed34f180b86423b872dd00000000000000000000000020a26c1bfa57572cf716b2b4b3e10661d5e062e8000000000000000000000000b4acbc082b5e7ded571c98ee4257778a9d784b3600000000000000000000000000000000000000000000000000000000005c9658c0",
+      "from": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8",
+      "expected": {
+        "intent": "Transfer position",
+        "interpolatedIntent": "Transfer Uniswap V3 Positions NFT-V1 #6067800 to 0xb4acbC082b5e7dEd571c98EE4257778a9D784B36",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #6067800"
+          },
+          {
+            "label": "From",
+            "value": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8"
+          },
+          {
+            "label": "To",
+            "value": "0xb4acbC082b5e7dEd571c98EE4257778a9D784B36"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Transfer position with safeTransferFrom - chain 8453",
+      "rawTx": "0x02f890822105820663839e464f8401d4040d830493e09403a520b32c04bf3beef7beb72e919cf822ed34f180b86442842e0e00000000000000000000000020a26c1bfa57572cf716b2b4b3e10661d5e062e8000000000000000000000000b4acbc082b5e7ded571c98ee4257778a9d784b3600000000000000000000000000000000000000000000000000000000005c9658c0",
+      "from": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8",
+      "expected": {
+        "intent": "Transfer position",
+        "interpolatedIntent": "Transfer Uniswap V3 Positions NFT-V1 #6067800 to 0xb4acbC082b5e7dEd571c98EE4257778a9D784B36",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #6067800"
+          },
+          {
+            "label": "From",
+            "value": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8"
+          },
+          {
+            "label": "To",
+            "value": "0xb4acbC082b5e7dEd571c98EE4257778a9D784B36"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Let an operator manage all positions - chain 8453",
+      "rawTx": "0x02f870822105820663839e464f8401d4040d830493e09403a520b32c04bf3beef7beb72e919cf822ed34f180b844a22cb465000000000000000000000000b4acbc082b5e7ded571c98ee4257778a9d784b360000000000000000000000000000000000000000000000000000000000000001c0",
+      "from": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8",
+      "expected": {
+        "intent": "Approve all positions",
+        "interpolatedIntent": "Let 0xb4acbC082b5e7dEd571c98EE4257778a9D784B36 manage all your positions: true",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Operator",
+            "value": "0xb4acbC082b5e7dEd571c98EE4257778a9D784B36"
+          },
+          {
+            "label": "Allowed",
+            "value": "true"
+          }
+        ]
+      }
     }
   ]
 }

@@ -6,7 +6,8 @@ why, what's audited.
 ## Files
 
 - `status.json`: the only hand-edited file.
-  - `ours`: `{registry path: {what, stage, pr, builds_on, show, note}}`. stage: draft | pr | merged | closed.
+  - `ours`: `{registry path: {what, stage, pr, builds_on, blocked_on, show, note}}`. stage: draft | pr | merged | closed.
+    `blocked_on`: what a PR waits for besides review (drop it when that's done).
   - `hide`: `{registry path: {selectors: ["0x…"], why}}`: functions to hide besides clear-review's F's.
   - `unhide`: `{"chain:address:selector": why}`: a clear-review F we show anyway.
 - `registry/<entity>/calldata-*.json` + `registry/<entity>/testsv2/*.tests.json`: ours, at the registry's own paths.

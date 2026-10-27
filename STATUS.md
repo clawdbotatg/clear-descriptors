@@ -8,7 +8,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 
 | Descriptor | What | Stage | PR | On the wedgie |
 |---|---|---|---|---|
-| `registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json` | Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum | pr | [#3157](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3157) (on #3075) | ours |
+| `registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json` | Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum | pr | [#3157](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3157) (on #3075) · blocked: llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry | ours |
 
 ## Hidden by hand
 

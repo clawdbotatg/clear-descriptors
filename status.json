@@ -8,7 +8,8 @@
         3075
       ],
       "show": true,
-      "note": "decreaseLiquidity/collect amounts stay raw (a position id, no tokens); the unwrap/sweep after them show tokens."
+      "note": "decreaseLiquidity/collect amounts stay raw (a position id, no tokens); the unwrap/sweep after them show tokens.",
+      "blocked_on": "llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry"
     }
   },
   "hide": {},

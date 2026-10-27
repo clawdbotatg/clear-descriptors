@@ -114,6 +114,8 @@ def main():
         if o.get("builds_on"):
             pr += " (on %s)" % ", ".join("#%d" % n for n in o["builds_on"])
         on = "ours" if f in add else "registry's" if o["stage"] == "merged" else "no"
+        if o.get("blocked_on"):
+            pr += " · blocked: %s" % o["blocked_on"]
         L.append("| `%s` | %s | %s | %s | %s |" % (f, o["what"], o["stage"], pr or "—", on))
     L += ["", "## Hidden by hand", ""]
     if st.get("hide"):
