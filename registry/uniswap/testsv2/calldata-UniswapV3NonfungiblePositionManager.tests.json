@@ -1,0 +1,873 @@
+{
+  "$schema": "../../../specs/erc7730-tests-v2.schema.json",
+  "descriptor": "../calldata-UniswapV3NonfungiblePositionManager.json",
+  "dataProvider": {
+    "tokens": {
+      "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": {
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": {
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "decimals": 18
+      },
+      "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270": {
+        "name": "Wrapped Polygon Ecosystem Token",
+        "symbol": "WPOL",
+        "decimals": 18
+      },
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+        "name": "WETH",
+        "symbol": "WETH",
+        "decimals": 18
+      },
+      "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+        "name": "Tether USDt",
+        "symbol": "USDT",
+        "decimals": 6
+      },
+      "0xd3d67a5d353d2f17b797699be8643165320f0125": {
+        "name": "TAGGER",
+        "symbol": "TAG",
+        "decimals": 18
+      },
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831": {
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf": {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "decimals": 18
+      }
+    },
+    "nftCollectionNames": {
+      "0xc36442b4a4522e871399cd717abdd847ab11fe88": "Uniswap V3 Positions NFT-V1",
+      "0x03a520b32c04bf3beef7beb72e919cf822ed34f1": "Uniswap V3 Positions NFT-V1"
+    }
+  },
+  "tests": [
+    {
+      "description": "Create position USDC/WETH 0.05% - chain 137",
+      "rawTx": "0x02f9019181892b8506fc23ac008514f46b0400830927c094c36442b4a4522e871399cd717abdd847ab11fe8880b90164883164560000000000000000000000003c499c542cef5e3811e1192ce70d8cc03d5c33590000000000000000000000007ceb23fd6bc0add59e62ac25578270cff1b9f61900000000000000000000000000000000000000000000000000000000000001f4000000000000000000000000000000000000000000000000000000000003025000000000000000000000000000000000000000000000000000000000000306240000000000000000000000000000000000000000000000000000000005f5e1000000000000000000000000000000000000000000000000000088c78bc7da40000000000000000000000000000000000000000000000000000000000005ee3fe000000000000000000000000000000000000000000000000000881877e1bbb800000000000000000000000000dad77910dbdfde764fc21fcd4e74d71bbaca6d8d000000000000000000000000000000000000000000000000000000006abd8660c0",
+      "expected": {
+        "intent": "Create position",
+        "interpolatedIntent": "Create a 0.05% position with up to 100 USDC and 0.0385 WETH",
+        "fields": [
+          {
+            "label": "Max amount 0",
+            "value": "100 USDC"
+          },
+          {
+            "label": "Max amount 1",
+            "value": "0.0385 WETH"
+          },
+          {
+            "label": "Min amount 0",
+            "value": "99.5 USDC"
+          },
+          {
+            "label": "Min amount 1",
+            "value": "0.0383075 WETH"
+          },
+          {
+            "label": "Fee tier",
+            "value": "0.05%"
+          },
+          {
+            "label": "Recipient",
+            "value": "0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D"
+          },
+          {
+            "label": "Deadline",
+            "value": "2026-09-30 22:00:00Z"
+          },
+          {
+            "label": "Native amount",
+            "value": "0 POL"
+          }
+        ],
+        "owner": "Uniswap Labs"
+      }
+    },
+    {
+      "description": "Add liquidity to WPOL/USDC position paid in POL - chain 137",
+      "rawTx": "0x02f8f981892c8506fc23ac008514f46b04008306ddd094c36442b4a4522e871399cd717abdd847ab11fe888901158e460913d00000b8c4219f5d1700000000000000000000000000000000000000000000000000000000002569be000000000000000000000000000000000000000000000001158e460913d0000000000000000000000000000000000000000000000000000000000000004c4b40000000000000000000000000000000000000000000000001142b0090b646000000000000000000000000000000000000000000000000000000000000004be998000000000000000000000000000000000000000000000000000000006abd8660c0",
+      "expected": {
+        "intent": "Add liquidity",
+        "interpolatedIntent": "Add liquidity to Uniswap V3 Positions NFT-V1 #2451902",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451902"
+          },
+          {
+            "label": "Max amount 0",
+            "value": "20000000000000000000"
+          },
+          {
+            "label": "Max amount 1",
+            "value": "5000000"
+          },
+          {
+            "label": "Min amount 0",
+            "value": "19900000000000000000"
+          },
+          {
+            "label": "Min amount 1",
+            "value": "4975000"
+          },
+          {
+            "label": "Deadline",
+            "value": "2026-09-30 22:00:00Z"
+          },
+          {
+            "label": "Native amount",
+            "value": "20 POL"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Add liquidity to USDC/WETH position - chain 137",
+      "rawTx": "0x02f8f081892d8506fc23ac008514f46b04008306ddd094c36442b4a4522e871399cd717abdd847ab11fe8880b8c4219f5d1700000000000000000000000000000000000000000000000000000000002569a10000000000000000000000000000000000000000000000000000000002faf080000000000000000000000000000000000000000000000000004451954707e0000000000000000000000000000000000000000000000000000000000002f71ff00000000000000000000000000000000000000000000000000043fa229c6f8400000000000000000000000000000000000000000000000000000000006abd8660c0",
+      "expected": {
+        "intent": "Add liquidity",
+        "interpolatedIntent": "Add liquidity to Uniswap V3 Positions NFT-V1 #2451873",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451873"
+          },
+          {
+            "label": "Max amount 0",
+            "value": "50000000"
+          },
+          {
+            "label": "Max amount 1",
+            "value": "19230000000000000"
+          },
+          {
+            "label": "Min amount 0",
+            "value": "49750000"
+          },
+          {
+            "label": "Min amount 1",
+            "value": "19133850000000000"
+          },
+          {
+            "label": "Deadline",
+            "value": "2026-09-30 22:00:00Z"
+          },
+          {
+            "label": "Native amount",
+            "value": "0 POL"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Remove liquidity from position - chain 137",
+      "rawTx": "0x02f8d081892e8506fc23ac008514f46b04008306ddd094c36442b4a4522e871399cd717abdd847ab11fe8880b8a40c49ccbe00000000000000000000000000000000000000000000000000000000002569a10000000000000000000000000000000000000000000000000000012b206cbbc40000000000000000000000000000000000000000000000000000000002f34f60000000000000000000000000000000000000000000000000004380663abb8000000000000000000000000000000000000000000000000000000000006abd8660c0",
+      "expected": {
+        "intent": "Remove liquidity",
+        "interpolatedIntent": "Remove liquidity from Uniswap V3 Positions NFT-V1 #2451873",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451873"
+          },
+          {
+            "label": "Liquidity",
+            "value": "1284739218372"
+          },
+          {
+            "label": "Min amount 0",
+            "value": "49500000"
+          },
+          {
+            "label": "Min amount 1",
+            "value": "19000000000000000"
+          },
+          {
+            "label": "Deadline",
+            "value": "2026-09-30 22:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Collect everything from position - chain 137",
+      "rawTx": "0x02f8b081892f8506fc23ac008514f46b04008306ddd094c36442b4a4522e871399cd717abdd847ab11fe8880b884fc6f786500000000000000000000000000000000000000000000000000000000002569a1000000000000000000000000dad77910dbdfde764fc21fcd4e74d71bbaca6d8d00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000ffffffffffffffffffffffffffffffffc0",
+      "expected": {
+        "intent": "Collect from position",
+        "interpolatedIntent": "Collect fees and tokens from Uniswap V3 Positions NFT-V1 #2451873 to 0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451873"
+          },
+          {
+            "label": "Recipient",
+            "value": "0xDad77910DbDFdE764fC21FCD4E74D71bBACA6D8D"
+          },
+          {
+            "label": "Max amount 0",
+            "value": "340282366920938463463374607431768211455"
+          },
+          {
+            "label": "Max amount 1",
+            "value": "340282366920938463463374607431768211455"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Burn position - chain 137",
+      "rawTx": "0x02f84f8189308506fc23ac008514f46b0400830249f094c36442b4a4522e871399cd717abdd847ab11fe8880a442966c6800000000000000000000000000000000000000000000000000000000002569a1c0",
+      "expected": {
+        "intent": "Burn position",
+        "interpolatedIntent": "Burn Uniswap V3 Positions NFT-V1 #2451873",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451873"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Approve position for Enso router - chain 137",
+      "rawTx": "0x02f8708189318506fc23ac008514f46b04008301388094c36442b4a4522e871399cd717abdd847ab11fe8880b844095ea7b3000000000000000000000000f75584ef6673ad213a685a1b58cc0330b8ea22cf00000000000000000000000000000000000000000000000000000000002569a1c0",
+      "expected": {
+        "intent": "Approve position",
+        "interpolatedIntent": "Approve 0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf to manage Uniswap V3 Positions NFT-V1 #2451873",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Spender",
+            "value": "0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"
+          },
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #2451873"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Remove liquidity and collect - chain 8453",
+      "rawTx": "0x02f902918221057e83118c30837ef40083059d539403a520b32c04bf3beef7beb72e919cf822ed34f180b90224ac9650d8000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000a40c49ccbe0000000000000000000000000000000000000000000000000000000000610f970000000000000000000000000000000000000000000000000004de8dd24061d700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae0e534000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000084fc6f78650000000000000000000000000000000000000000000000000000000000610f97000000000000000000000000291a17a2547abeb0aff9e0cb7e20ae6175f00fa800000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000c080a08616439af2366c110058dffe1c0aa2612f621fe44632937bb370d0b755c15070a05b450accfcece14b320ca1fc7420756c7a605cada212ea1c54c9c0acf652d14b",
+      "from": "0x291a17A2547abEb0aFf9e0CB7E20Ae6175f00fa8",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Remove liquidity",
+              "interpolatedIntent": "Remove liquidity from Uniswap V3 Positions NFT-V1 #6360983",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #6360983"
+                },
+                {
+                  "label": "Liquidity",
+                  "value": "1370600606032343"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "0"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "0"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 17:53:56Z"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Collect from position",
+              "interpolatedIntent": "Collect fees and tokens from Uniswap V3 Positions NFT-V1 #6360983 to 0x291a17A2547abEb0aFf9e0CB7E20Ae6175f00fa8",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #6360983"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x291a17A2547abEb0aFf9e0CB7E20Ae6175f00fa8"
+                },
+                {
+                  "label": "Max amount 0",
+                  "value": "340282366920938463463374607431768211455"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "340282366920938463463374607431768211455"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Collect fees as native token and token - chain 8453",
+      "rawTx": "0x02f902f382210582047d831312d083aba95083048c0c9403a520b32c04bf3beef7beb72e919cf822ed34f180b90284ac9650d8000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001a00000000000000000000000000000000000000000000000000000000000000084fc6f78650000000000000000000000000000000000000000000000000000000000544690000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004449404b7c00000000000000000000000000000000000000000000000000470c6252b0fc0c00000000000000000000000061e438a86b1de6a2337b0088a8a3290f066d53f6000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000064df2ab5bb000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda0291300000000000000000000000000000000000000000000000000000000033aab2000000000000000000000000061e438a86b1de6a2337b0088a8a3290f066d53f600000000000000000000000000000000000000000000000000000000c001a045c687fcf7f28ce9b6b686967a6f980b22409951d3a326f3f16f54565da2da42a03fc37e2fe4e244610a80bffffa4ac545392ce2855c2ad92ca718ee97c39997ae",
+      "from": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Collect from position",
+              "interpolatedIntent": "Collect fees and tokens from Uniswap V3 Positions NFT-V1 #5523088 to 0x0000000000000000000000000000000000000000",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #5523088"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x0000000000000000000000000000000000000000"
+                },
+                {
+                  "label": "Max amount 0",
+                  "value": "340282366920938463463374607431768211455"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "340282366920938463463374607431768211455"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Unwrap to native token",
+              "interpolatedIntent": "Unwrap at least 0.019998339780115468 ETH to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "0.019998339780115468 ETH"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Send tokens",
+              "interpolatedIntent": "Send at least 54.176544 USDC to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "54.176544 USDC"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Add liquidity paid in native token - chain 8453",
+      "rawTx": "0x02f9023a82210582047e831312d083aba9508304322e9403a520b32c04bf3beef7beb72e919cf822ed34f1875de0b32f38aa39b901c4ac9650d8000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000c4219f5d170000000000000000000000000000000000000000000000000000000000544690000000000000000000000000000000000000000000000000005de0b32f38aa3900000000000000000000000000000000000000000000000000000000033aab20000000000000000000000000000000000000000000000000005710d34516de8f0000000000000000000000000000000000000000000000000000000002f43b20000000000000000000000000000000000000000000000000000000006ae0e5b600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000412210e8a00000000000000000000000000000000000000000000000000000000c080a06d50ee240ec7092a6da494628c7c6d07638a0e18ed6d7c2c6a62975ccc71648fa07959a45136fa5e743a50a13d76aa20902eb65163d2df87a3a7d157c405a639b5",
+      "from": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Add liquidity",
+              "interpolatedIntent": "Add liquidity to Uniswap V3 Positions NFT-V1 #5523088",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #5523088"
+                },
+                {
+                  "label": "Max amount 0",
+                  "value": "26424233030101561"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "54176544"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "24506822557097615"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "49560352"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 17:56:06Z"
+                },
+                {
+                  "label": "Native amount",
+                  "value": "0.026424233030101561 ETH"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Refund unused native token",
+              "interpolatedIntent": "Refund unused native token to 0x61E438A86b1dE6A2337B0088a8a3290f066D53F6",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Recipient",
+                  "value": "0x61E438A86b1dE6A2337B0088a8a3290f066D53F6"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Close position to native token and token - chain 1",
+      "rawTx": "0x02f904710182029e8211a8840a5c2fd4830b132894c36442b4a4522e871399cd717abdd847ab11fe8880b90404ac9650d80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000002c0000000000000000000000000000000000000000000000000000000000000036000000000000000000000000000000000000000000000000000000000000000a40c49ccbe000000000000000000000000000000000000000000000000000000000015378d0000000000000000000000000000000000000000000000000011137f2b28a631000000000000000000000000000000000000000000000000000000004427e1d20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae09ca7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000084fc6f7865000000000000000000000000000000000000000000000000000000000015378d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004449404b7c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2817ccb611dd0cb412b0d1758af82d72c398b7a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000064df2ab5bb000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2817ccb611dd0cb412b0d1758af82d72c398b7a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002442966c68000000000000000000000000000000000000000000000000000000000015378d00000000000000000000000000000000000000000000000000000000c001a082c02810911b3d561b813af154157dfa66f405c237787943195e0f870656e330a01b9032977af23d2b48978bdf94b02d8c50c516a8c26ea97a0bfcada485c6b915",
+      "from": "0xd2817cCB611Dd0cB412B0D1758Af82D72C398B7A",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Remove liquidity",
+              "interpolatedIntent": "Remove liquidity from Uniswap V3 Positions NFT-V1 #1390477",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #1390477"
+                },
+                {
+                  "label": "Liquidity",
+                  "value": "4806511509939761"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "1143464402"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "0"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 12:44:23Z"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Collect from position",
+              "interpolatedIntent": "Collect fees and tokens from Uniswap V3 Positions NFT-V1 #1390477 to 0x0000000000000000000000000000000000000000",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #1390477"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x0000000000000000000000000000000000000000"
+                },
+                {
+                  "label": "Max amount 0",
+                  "value": "340282366920938463463374607431768211455"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "340282366920938463463374607431768211455"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Unwrap to native token",
+              "interpolatedIntent": "Unwrap at least 0 ETH to 0xd2817cCB611Dd0cB412B0D1758Af82D72C398B7A",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "0 ETH"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0xd2817cCB611Dd0cB412B0D1758Af82D72C398B7A"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Send tokens",
+              "interpolatedIntent": "Send at least 0 USDC to 0xd2817cCB611Dd0cB412B0D1758Af82D72C398B7A",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "0 USDC"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0xd2817cCB611Dd0cB412B0D1758Af82D72C398B7A"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Burn position",
+              "interpolatedIntent": "Burn Uniswap V3 Positions NFT-V1 #1390477",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #1390477"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Create position paid in native token - chain 1",
+      "rawTx": "0x02f902d80108830186a084031d6c268307971c94c36442b4a4522e871399cd717abdd847ab11fe888809789a94d790ca76b90264ac9650d800000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000016488316456000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec70000000000000000000000000000000000000000000000000000000000000064fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcef87fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcf8a800000000000000000000000000000000000000000000000009789a94d790ca7600000000000000000000000000000000000000000000000000000001f9dc516c00000000000000000000000000000000000000000000000002dbe465ead8580f00000000000000000000000000000000000000000000000000000001b66c6b4c000000000000000000000000d45c19e3efb7f34d725c561ded1d060f468d85ef000000000000000000000000000000000000000000000000000000006ae0973200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000412210e8a00000000000000000000000000000000000000000000000000000000c080a08bb61e7f1390568b12ff4586c0daa6caef278c2f4352099a5812f09279dc0a5ba01c51ac9ab1c5ff85c796d46e5bac2d1cf40ca5ff593bc38e6b2958e605db8964",
+      "from": "0xd45C19e3EFB7F34D725c561ded1D060f468D85Ef",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Create position",
+              "interpolatedIntent": "Create a 0.01% position with up to 0.68246530760905791 WETH and 8486.932844 USDT",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Max amount 0",
+                  "value": "0.68246530760905791 WETH"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "8486.932844 USDT"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "0.206009334358366223 WETH"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "7355.525964 USDT"
+                },
+                {
+                  "label": "Fee tier",
+                  "value": "0.01%"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0xd45C19e3EFB7F34D725c561ded1D060f468D85Ef"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 12:21:06Z"
+                },
+                {
+                  "label": "Native amount",
+                  "value": "0.68246530760905791 ETH"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Refund unused native token",
+              "interpolatedIntent": "Refund unused native token to 0xd45C19e3EFB7F34D725c561ded1D060f468D85Ef",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Recipient",
+                  "value": "0xd45C19e3EFB7F34D725c561ded1D060f468D85Ef"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Create pool and position - chain 1",
+      "rawTx": "0x02f90353018214e8843b9aca00843fcfaa96835ad22994c36442b4a4522e871399cd717abdd847ab11fe8880b902e4ac9650d80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000008413ead562000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000d3d67a5d353d2f17b797699be8643165320f01250000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000008bc0bc33d98dd5b602a1d7cd80f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016488316456000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000d3d67a5d353d2f17b797699be8643165320f01250000000000000000000000000000000000000000000000000000000000000bb8fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff2764c000000000000000000000000000000000000000000000000000000000002592c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028eed91b919090db6dbfff831000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028eed91b919090db6dbfff8310000000000000000000000002f0f35765563ba038ba80ffb80d76eb6106b946a000000000000000000000000000000000000000000000000000000006ae098ae00000000000000000000000000000000000000000000000000000000c080a001f9577a6845b05e305d134f90cd5601171059b573a6dd6b9d9e735799ec145fa03d81ff0f0758f89a1ab8342b8f971b760493fdbdd20e915050ee2f13d65c7d7b",
+      "from": "0x2F0F35765563Ba038BA80ffB80d76Eb6106B946A",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Create pool",
+              "interpolatedIntent": "Create a 0.3% pool for WETH and TAG",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Token 0",
+                  "value": "WETH"
+                },
+                {
+                  "label": "Token 1",
+                  "value": "TAG"
+                },
+                {
+                  "label": "Fee tier",
+                  "value": "0.3%"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Create position",
+              "interpolatedIntent": "Create a 0.3% position with up to 0 WETH and 202690399999.999999999999998001 TAG",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Max amount 0",
+                  "value": "0 WETH"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "202690399999.999999999999998001 TAG"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "0 WETH"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "202690399999.999999999999998001 TAG"
+                },
+                {
+                  "label": "Fee tier",
+                  "value": "0.3%"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x2F0F35765563Ba038BA80ffB80d76Eb6106B946A"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 12:27:26Z"
+                },
+                {
+                  "label": "Native amount",
+                  "value": "0 ETH"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Remove liquidity to native token and token - chain 42161",
+      "rawTx": "0x02f903ef82a4b118808401b52a108307769d94c36442b4a4522e871399cd717abdd847ab11fe8880b90384ac9650d80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000002a000000000000000000000000000000000000000000000000000000000000000a40c49ccbe0000000000000000000000000000000000000000000000000000000000565ed6000000000000000000000000000000000000000000000000000005215c54ab510000000000000000000000000000000000000000000000000021796c0d4e56cd000000000000000000000000000000000000000000000000000000000158fbca000000000000000000000000000000000000000000000000000000006ae0f38c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000084fc6f78650000000000000000000000000000000000000000000000000000000000565ed6000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000ffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004449404b7c00000000000000000000000000000000000000000000000000232931b488cb74000000000000000000000000e0a6e3b32484a64e30c09c366a862c3e9da14e90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000064df2ab5bb000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e583100000000000000000000000000000000000000000000000000000000016b1f7c000000000000000000000000e0a6e3b32484a64e30c09c366a862c3e9da14e9000000000000000000000000000000000000000000000000000000000c080a0ab2ad189d4945196e9781603b7d8bf81593932f15dfd884c6e26ff064531149aa00b6dccb4b784a189d05c4273a8104c10794a72217f1131f279e6ed5766cd0527",
+      "from": "0xe0a6E3b32484A64e30C09c366a862C3E9dA14E90",
+      "expected": {
+        "intent": "Batch position actions",
+        "interpolatedIntent": "Batch position actions",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Remove liquidity",
+              "interpolatedIntent": "Remove liquidity from Uniswap V3 Positions NFT-V1 #5660374",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #5660374"
+                },
+                {
+                  "label": "Liquidity",
+                  "value": "5640841112401"
+                },
+                {
+                  "label": "Min amount 0",
+                  "value": "9422179218118349"
+                },
+                {
+                  "label": "Min amount 1",
+                  "value": "22608842"
+                },
+                {
+                  "label": "Deadline",
+                  "value": "2026-10-27 18:55:08Z"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Collect from position",
+              "interpolatedIntent": "Collect fees and tokens from Uniswap V3 Positions NFT-V1 #5660374 to 0x0000000000000000000000000000000000000000",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Position",
+                  "value": "Uniswap V3 Positions NFT-V1 #5660374"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0x0000000000000000000000000000000000000000"
+                },
+                {
+                  "label": "Max amount 0",
+                  "value": "340282366920938463463374607431768211455"
+                },
+                {
+                  "label": "Max amount 1",
+                  "value": "340282366920938463463374607431768211455"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Unwrap to native token",
+              "interpolatedIntent": "Unwrap at least 0.00989691764387314 ETH to 0xe0a6E3b32484A64e30C09c366a862C3E9dA14E90",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "0.00989691764387314 ETH"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0xe0a6E3b32484A64e30C09c366a862C3E9dA14E90"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Action",
+            "value": {
+              "intent": "Send tokens",
+              "interpolatedIntent": "Send at least 23.797628 USDC to 0xe0a6E3b32484A64e30C09c366a862C3E9dA14E90",
+              "owner": "Uniswap Labs",
+              "fields": [
+                {
+                  "label": "Min amount",
+                  "value": "23.797628 USDC"
+                },
+                {
+                  "label": "Recipient",
+                  "value": "0xe0a6E3b32484A64e30C09c366a862C3E9dA14E90"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Transfer position - chain 8453",
+      "rawTx": "0x02f91b14822105820663839e464f8401d4040d83139c809403a520b32c04bf3beef7beb72e919cf822ed34f180b91aa4b88d4fde00000000000000000000000020a26c1bfa57572cf716b2b4b3e10661d5e062e8000000000000000000000000b4acbc082b5e7ded571c98ee4257778a9d784b3600000000000000000000000000000000000000000000000000000000005c965800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000001a00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002e0000000000000000000000000000000000000000000000000071bac971dcfa8500000000000000000000000000000000000000000000000000000000000c803a20000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae0e09400000000000000000000000020a26c1bfa57572cf716b2b4b3e10661d5e062e80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004189374bc6a7f0000000000000000000000000000000000000000000000000004189374bc6a7f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016a42db897d00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000fd3808ac5791bc0decef2354c3c670f90ea7ca8d000000000000000000000000000000000000000000000000071bac971dcfa8500000000000000000000000000000000000000000000000000000000000c803a2000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000168e4c3ac8d89b00958b6be6400b066f0347ddc900000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000002000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda0291300000000000000000000000000000000000000000000000000000000000014e4e21fd0e900000000000000000000000000000000000000000000000000000000000000200000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f996000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000011a000000000000000000000000000000000000000000000000000000000000013e000000000000000000000000000000000000000000000000000000000000010d4d7a5c6b52756e795f680b0f7e0c2f21281dde6ef0000000000000000071bac971dcfa8500000000000000000071bac971dcfa850000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000411dbbc4624f845197935900991e649e231faa737446a7ccd3a4125c45b4d6d5bc0e0500cc9e5ec528e2f8edcadc0b6d64e618ad1db5e127e25c07984261d5a6371b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000fc00000000000000000000000006fd481970744f9bc0044a81859fd92431a2dd67d000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000001c0000000000000000006c0b0c2c2b8794000000000000000000776a86b78e6d7400000000000000000071bac971dcfa85000000000000000000000000000ca08d7000000000000000000000000000000000000000000000d0000000f42400000000000000000000000000000001111110f0f73c0b2ef09ec012eae758b3e03a9020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae0e2ec0000000000000000000000000000000000000000000000000000000000000fa0000000000000000000000000000000000000000000000000000000000000000361f598cd00000000000000007b0e2e8300899b647d5ebc66f9d4fa3f16c5406161f598cd00000000000000007b0e2e8300899b647d5ebc66f9d4fa3f16c5406191dd734600000000000000007b0e2e8300899b647d5ebc66f9d4fa3f16c54061000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000d40000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf8000000000000000000000774111189c0000000000000000071bac971dcfa85000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000007400000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000071bac971dcfa8504f2d31ea0000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f996000000000000000000000000000000000000000000000000000000000000064000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000ca08d70000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000320000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000002c0736e774d0000000000000000069c11bfc769be175bfae2d20bddce34e46514cc5e3bc7bc0000000000000000e5cf02f2b4a9a42a815b5ea2ac25e675918432160000000000000000000000000000000000000000000000000000000000000220000000000000000000000000498581ff718922c3f8e6a244956af099b2652b2b0000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf000000000000000000000000000000000000000000000000071bac971dcfa850000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda0291300000000000000000000000000000000000000000000000000000000000001770000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000038e25486d7c31078cf0d3e621fbe200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000002808bc041a80000000000000000beb7242f6fcb2ad767d5f6cb79542dbc2a9d215f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000052bc3eb04b88a3f0d3ac57b6aed642e4d0d800380000000000000000000000000000000000000000000000440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000124e24f08840000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f99600000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000071bac971dcfa850736e774d0000000000000001069c11bfc769be175bfae2d20bddce34e46514cc00000000000000000000000000000000000000000000000000000000000000800000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f9960000000000000000000000000000000000000000000000000000000000000220000000000000000000000000498581ff718922c3f8e6a244956af099b2652b2b0000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf000000000000000000000000000000000000000000000000071bac971dcfa850000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda0291300000000000000000000000000000000000000000000000000000000000001770000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000038e25486d7c31078cf0d3e621fbe20000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000071bac971dcfa8508bc041a80000000000000001beb7242f6fcb2ad767d5f6cb79542dbc2a9d215f00000000000000000000000000000000000000000000000000000000000000800000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f99600000000000000000000000000000000000000000000000000000000000001e000000000000000000000000052bc3eb04b88a3f0d3ac57b6aed642e4d0d800380000000000000000000000000000000000000000000000440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000124e24f08840000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f99600000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda029138000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000acfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000002000000000000000000000000006fd481970744f9bc0044a81859fd92431a2dd67d000000000000000000000000000000000000000000000000071bac971dcfa8500000000000000000000000000000000000000000000000000000000000a1a0ab0000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000000010000000000000000000000008f10b468b06c6fd214b65f87778827f7d113f9960000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000071bac971dcfa85000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a87b22536f75726365223a226b72797374616c2d616c6d222c22416d6f756e74496e555344223a2231332e3139373837222c22416d6f756e744f7574555344223a2231332e323136313037222c22416d6f756e744f7574223a223133323430353334222c22526f7574654944223a2230656330336365354b79744e4861427a3a30656539643463397561744c456f6936222c2254696d657374616d70223a313739333132313835327d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c080a0f61310886f1db1668ab41a35f0cfa12cb38706820fa2f38ef42d551ae9b56dbda04fa58f4cee4eb30fb3493223af279db36dcfb2d11edd726018a57c0c712bc115",
+      "from": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8",
+      "expected": {
+        "intent": "Transfer position",
+        "interpolatedIntent": "Transfer Uniswap V3 Positions NFT-V1 #6067800 to 0xb4acbC082b5e7dEd571c98EE4257778a9D784B36",
+        "owner": "Uniswap Labs",
+        "fields": [
+          {
+            "label": "Position",
+            "value": "Uniswap V3 Positions NFT-V1 #6067800"
+          },
+          {
+            "label": "From",
+            "value": "0x20a26c1BFA57572CF716b2b4B3E10661d5E062e8"
+          },
+          {
+            "label": "To",
+            "value": "0xb4acbC082b5e7dEd571c98EE4257778a9D784B36"
+          }
+        ]
+      }
+    }
+  ]
+}

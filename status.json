@@ -1,0 +1,16 @@
+{
+  "ours": {
+    "registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json": {
+      "what": "Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum",
+      "stage": "pr",
+      "pr": 3157,
+      "builds_on": [
+        3075
+      ],
+      "show": true,
+      "note": "decreaseLiquidity/collect amounts stay raw (a position id, no tokens); the unwrap/sweep after them show tokens."
+    }
+  },
+  "hide": {},
+  "unhide": {}
+}
