@@ -9,8 +9,11 @@ Our ERC-7730 clear-signing descriptors, and which descriptors the [wedgie](https
 - **Audited:** registry descriptors with a Cyfrin attestation. The wedgie shows the rest as "not audited".
 
 **[STATUS.md](STATUS.md)** has all of it in tables. `status.json` is the one file edited by hand;
-`python3 tools/status.py` rebuilds `STATUS.md` and `show.json` (what wedgie.dev's clear-signing build reads:
-`wedgie-dev/wire/release.py --ours`).
+`python3 tools/status.py` rebuilds `STATUS.md` and `show.json`. Who reads `show.json`'s `add`:
+
+- **The wedgie:** wedgie.dev's clear-signing build (`wedgie-dev/wire/release.py`, a checkout of this repo beside
+  wedgie-dev). Shows up on wedgies only with the next data release, a new Safe Signer Austin signs.
+- **Instant Wallet's pages:** `/api/explain` reads it from GitHub (cached an hour, no deploy).
 
 ## Notes on ours
 

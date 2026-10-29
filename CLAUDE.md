@@ -14,7 +14,8 @@ why, what's audited.
   Self-contained (no `includes`), so wedgie.dev's build can read them alone.
 - `tools/status.py`: refreshes PR stages from GitHub, writes `STATUS.md` and `show.json`. Run it after any change
   here, and commit all three.
-- `show.json`: generated. `add` = our files not merged yet (wedgie.dev builds them in, "not audited");
+- `show.json`: generated. `add` = our files not merged yet (wedgie.dev builds them in, root a; Instant Wallet's
+  `/api/explain` reads them live from GitHub);
   `hide` = `chain:address:selector` keys left out of the build (the wedgie says it can't read that call).
 
 ## Adding a descriptor
