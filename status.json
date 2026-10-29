@@ -3,13 +3,12 @@
     "registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json": {
       "what": "Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum",
       "stage": "pr",
-      "pr": 3157,
+      "pr": 3184,
       "builds_on": [
-        3075
+        3175
       ],
       "show": true,
-      "note": "decreaseLiquidity/collect amounts stay raw (a position id, no tokens); the unwrap/sweep after them show tokens.",
-      "blocked_on": "llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry"
+      "note": "#3175 (not ours) merged mainnet; #3184 adds the 4 L2s on top (replaces our #3157). Ours stays on the wedgie: it reads multicalls that send ETH, #3175 doesn't (a separate PR)."
     },
     "registry/safe/calldata-ThisSafe.json": {
       "what": "Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler",

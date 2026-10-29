@@ -8,7 +8,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 
 | Descriptor | What | Stage | PR | On the wedgie |
 |---|---|---|---|---|
-| `registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json` | Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum | pr | [#3157](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3157) (on #3075) · blocked: llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry | ours |
+| `registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json` | Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum | pr | [#3184](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3184) (on #3175) | ours |
 | `registry/safe/calldata-ThisSafe.json` | Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler | draft | — | ours |
 | `registry/safe/calldata-MultiSend.json` | Safe MultiSend batches (ERC-8362): each call in the batch | draft | — | ours |
 | `registry/safe/calldata-PasskeySignerFactory.json` | Safe passkey signer factory: create a passkey signer | draft | — | ours |
@@ -105,7 +105,7 @@ A function graded F (its screen says something untrue or unreadable) isn't shown
 
 | | Files |
 |---|---|
-| calldata descriptors | 589 |
-| audited (Cyfrin) | 163 |
+| calldata descriptors | 593 |
+| audited (Cyfrin) | 162 |
 | graded by clear-review | 709 |
 | with an F function | 68 |
