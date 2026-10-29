@@ -1,6 +1,16 @@
 {
  "add": [
-  "registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json"
+  "registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json",
+  "registry/safe/calldata-ThisSafe.json",
+  "registry/safe/calldata-MultiSend.json",
+  "registry/safe/calldata-PasskeySignerFactory.json",
+  "registry/candide/calldata-SocialRecovery-7d.json",
+  "registry/candide/calldata-SocialRecovery-14d.json",
+  "registry/candide/calldata-SocialRecovery-60d.json",
+  "registry/uniswap/calldata-SwapRouter02.json",
+  "registry/uniswap/calldata-UniversalRouter-v2.0.json",
+  "registry/uniswap/calldata-UniversalRouter-v2.1.json",
+  "registry/lifi/calldata-LIFIDiamond-swaps.json"
  ],
  "hide": [
   {

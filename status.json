@@ -10,6 +10,63 @@
       "show": true,
       "note": "decreaseLiquidity/collect amounts stay raw (a position id, no tokens); the unwrap/sweep after them show tokens.",
       "blocked_on": "llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry"
+    },
+    "registry/safe/calldata-ThisSafe.json": {
+      "what": "Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler",
+      "stage": "draft",
+      "show": true,
+      "note": "Bound to the stand-in 0x5afe\u20265afe (a Safe calling itself), not in the spec: goes up as a proposal"
+    },
+    "registry/safe/calldata-MultiSend.json": {
+      "what": "Safe MultiSend batches (ERC-8362): each call in the batch",
+      "stage": "draft",
+      "show": true,
+      "note": "Written; the wedgie still reads batches by hand (wedgie-dev docs/CLEAR-SIGNING-CHECK.md)"
+    },
+    "registry/safe/calldata-PasskeySignerFactory.json": {
+      "what": "Safe passkey signer factory: create a passkey signer",
+      "stage": "draft",
+      "show": true
+    },
+    "registry/candide/calldata-SocialRecovery-7d.json": {
+      "what": "Candide social recovery, 7-day module: add/remove helper, cancel",
+      "stage": "draft",
+      "show": true
+    },
+    "registry/candide/calldata-SocialRecovery-14d.json": {
+      "what": "Candide social recovery, 14-day module",
+      "stage": "draft",
+      "show": true
+    },
+    "registry/candide/calldata-SocialRecovery-60d.json": {
+      "what": "Candide social recovery, 60-day module",
+      "stage": "draft",
+      "show": true
+    },
+    "registry/uniswap/calldata-SwapRouter02.json": {
+      "what": "Uniswap SwapRouter02: swaps, multicall, unwrap/sweep, refund, wrap, on 5 chains",
+      "stage": "pr",
+      "show": true,
+      "pr": 3161,
+      "note": "Replaces the registry's for the same functions"
+    },
+    "registry/uniswap/calldata-UniversalRouter-v2.0.json": {
+      "what": "Uniswap Universal Router v2.0 (ERC-8362 commands)",
+      "stage": "draft",
+      "show": true,
+      "note": "ERC-8362 draft: goes up when the spec takes it"
+    },
+    "registry/uniswap/calldata-UniversalRouter-v2.1.json": {
+      "what": "Uniswap Universal Router v2.1 (ERC-8362 commands)",
+      "stage": "draft",
+      "show": true,
+      "note": "ERC-8362 draft: goes up when the spec takes it"
+    },
+    "registry/lifi/calldata-LIFIDiamond-swaps.json": {
+      "what": "LI.FI same-chain swaps + swapTokensGeneric, receiver must be this Safe (senderAddress @.from)",
+      "stage": "draft",
+      "show": true,
+      "note": "Made by wedgie-dev tools/make_lifi.py from the registry file; replaces the registry's swaps"
     }
   },
   "hide": {},

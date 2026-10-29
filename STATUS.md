@@ -9,6 +9,16 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | Descriptor | What | Stage | PR | On the wedgie |
 |---|---|---|---|---|
 | `registry/uniswap/calldata-UniswapV3NonfungiblePositionManager.json` | Uniswap V3 positions: add/remove liquidity, collect, multicall, on Ethereum, Optimism, Polygon, Base, Arbitrum | pr | [#3157](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3157) (on #3075) · blocked: llbartekll/clear-signing#26: the Rust test runner can't parse a nested interpolatedIntent (Sourcify needs it); then a pin bump in the registry | ours |
+| `registry/safe/calldata-ThisSafe.json` | Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler | draft | — | ours |
+| `registry/safe/calldata-MultiSend.json` | Safe MultiSend batches (ERC-8362): each call in the batch | draft | — | ours |
+| `registry/safe/calldata-PasskeySignerFactory.json` | Safe passkey signer factory: create a passkey signer | draft | — | ours |
+| `registry/candide/calldata-SocialRecovery-7d.json` | Candide social recovery, 7-day module: add/remove helper, cancel | draft | — | ours |
+| `registry/candide/calldata-SocialRecovery-14d.json` | Candide social recovery, 14-day module | draft | — | ours |
+| `registry/candide/calldata-SocialRecovery-60d.json` | Candide social recovery, 60-day module | draft | — | ours |
+| `registry/uniswap/calldata-SwapRouter02.json` | Uniswap SwapRouter02: swaps, multicall, unwrap/sweep, refund, wrap, on 5 chains | pr | [#3161](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3161) | ours |
+| `registry/uniswap/calldata-UniversalRouter-v2.0.json` | Uniswap Universal Router v2.0 (ERC-8362 commands) | draft | — | ours |
+| `registry/uniswap/calldata-UniversalRouter-v2.1.json` | Uniswap Universal Router v2.1 (ERC-8362 commands) | draft | — | ours |
+| `registry/lifi/calldata-LIFIDiamond-swaps.json` | LI.FI same-chain swaps + swapTokensGeneric, receiver must be this Safe (senderAddress @.from) | draft | — | ours |
 
 ## Hidden by hand
 
