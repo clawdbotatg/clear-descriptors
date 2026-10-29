@@ -15,6 +15,12 @@ Our ERC-7730 clear-signing descriptors, and which descriptors the [wedgie](https
   wedgie-dev). Shows up on wedgies only with the next data release, a new Safe Signer Austin signs.
 - **Instant Wallet's pages:** `/api/explain` reads it from GitHub (cached an hour, no deploy).
 
+## Goals, in order
+
+1. People see what they're doing when they sign a transaction.
+2. The EF registry's descriptors are accurate.
+3. We PR in the descriptors we need, or that are common and missing.
+
 ## Notes on ours
 
 Moved here from wedgie-dev `descriptors/` (10-29); wedgie.dev's build (`wire/release.py`) reads this repo's

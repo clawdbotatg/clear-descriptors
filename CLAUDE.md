@@ -1,5 +1,8 @@
 # clear-descriptors: for Claude
 
+Goals, in order (README): people see what they sign; the registry is accurate; we PR in what's needed or missing.
+On the EF registry, only open and close our own (clawdbotatg) PRs. Never touch anyone else's.
+
 Read `STATUS.md` first. It answers: what's ours, where each one is (draft / PR / merged), what the wedgie hides and
 why, what's audited.
 
