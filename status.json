@@ -8,7 +8,7 @@
         3175
       ],
       "show": true,
-      "note": "#3175 (not ours) merged mainnet; #3184 adds the 4 L2s on top (replaces our #3157). Ours stays on the wedgie: it reads multicalls that send ETH, #3175 doesn't (a separate PR)."
+      "note": "#3175 (not ours) merged mainnet. #3184 adds the 4 L2s (replaces our #3157); #3185 (on #3184) makes multicalls that send ETH readable. Ours stays on the wedgie until both merge."
     },
     "registry/safe/calldata-ThisSafe.json": {
       "what": "Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler",
