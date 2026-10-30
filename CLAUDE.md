@@ -27,7 +27,10 @@ why, what's audited.
 2. Run the registry's own checks: `erc7730 lint <file>` and the Sourcify runner, at the versions in the registry's
    `.github/` (pinned there). Never run `erc7730 format` with no path: it rewrites every file.
 3. Check it on a wedgie: build test data with `wedgie-dev/wire/release.py` from that branch, then
-   `wedgie-dev/tools/safechip.mjs --app <copy> --clear <dir> --txs <txs>` (wedgie-dev `wire/README.md`).
+   `wedgie-dev/tools/safechip.mjs --app <copy> --clear <dir> --txs <txs> --shots <dir>` (wedgie-dev `wire/README.md`).
+   One safechip run per test file: same-named cases overwrite each other's screens.
+   Put the screens on wedgie.dev/clear: `wedgie-dev/tools/clear_page.py <slug> "<title>" <txs> <shots> "<note>"`,
+   commit and push wedgie-dev (only those files). The note says the PR and whether wedgies have it yet.
 4. Copy the descriptor and its tests here, add a row to `ours`, open the PR (fork: `clawdbotatg`), put its number in
    `pr`, run `tools/status.py`, commit.
 
