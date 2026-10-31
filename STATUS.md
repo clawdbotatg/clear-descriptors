@@ -12,16 +12,16 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/safe/calldata-ThisSafe.json` | Safe settings on this Safe: add/remove/swap owner, threshold, modules, guard, fallback handler | draft | — | ours |
 | `registry/safe/calldata-MultiSend.json` | Safe MultiSend batches (ERC-8362): each call in the batch | draft | — | ours |
 | `registry/safe/calldata-PasskeySignerFactory.json` | Safe passkey signer factory: create a passkey signer | draft | — | ours |
-| `registry/candide/calldata-SocialRecovery-7d.json` | Candide recovery, 7-day module: helpers, votes, start, finish, cancel | draft | — | ours |
-| `registry/candide/calldata-SocialRecovery-14d.json` | Candide recovery, 14-day module: helpers, votes, start, finish, cancel | draft | — | ours |
-| `registry/candide/calldata-SocialRecovery-60d.json` | Candide recovery, 60-day module: helpers, votes, start, finish, cancel | draft | — | ours |
+| `registry/candide/calldata-SocialRecovery-7d.json` | Candide recovery, 7-day module: helpers, votes, start, finish, cancel | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | ours |
+| `registry/candide/calldata-SocialRecovery-14d.json` | Candide recovery, 14-day module: helpers, votes, start, finish, cancel | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | ours |
+| `registry/candide/calldata-SocialRecovery-60d.json` | Candide recovery, 60-day module: helpers, votes, start, finish, cancel | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | ours |
 | `registry/uniswap/calldata-SwapRouter02.json` | Uniswap SwapRouter02: swaps, multicall, unwrap/sweep, refund, wrap, on 5 chains | pr | [#3161](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3161) | ours |
 | `registry/uniswap/calldata-UniversalRouter-v2.0.json` | Uniswap Universal Router v2.0 (ERC-8362 commands) | draft | — | ours |
 | `registry/uniswap/calldata-UniversalRouter-v2.1.json` | Uniswap Universal Router v2.1 (ERC-8362 commands) | draft | — | ours |
 | `registry/lifi/calldata-LIFIDiamond-swaps.json` | LI.FI same-chain swaps + swapTokensGeneric, receiver must be this Safe (senderAddress @.from) | draft | — | ours |
-| `registry/candide/eip712-SocialRecovery-7d.json` | Candide recovery, 7-day module: a guardian's vote (signed message) | draft | — | no |
-| `registry/candide/eip712-SocialRecovery-14d.json` | Candide recovery, 14-day module: a guardian's vote (signed message) | draft | — | no |
-| `registry/candide/eip712-SocialRecovery-60d.json` | Candide recovery, 60-day module: a guardian's vote (signed message) | draft | — | no |
+| `registry/candide/eip712-SocialRecovery-7d.json` | Candide recovery, 7-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
+| `registry/candide/eip712-SocialRecovery-14d.json` | Candide recovery, 14-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
+| `registry/candide/eip712-SocialRecovery-60d.json` | Candide recovery, 60-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
 
 ## Hidden by hand
 
@@ -108,7 +108,7 @@ A function graded F (its screen says something untrue or unreadable) isn't shown
 
 | | Files |
 |---|---|
-| calldata descriptors | 593 |
-| audited (Cyfrin) | 162 |
+| calldata descriptors | 616 |
+| audited (Cyfrin) | 161 |
 | graded by clear-review | 709 |
 | with an F function | 68 |

@@ -29,21 +29,24 @@
     },
     "registry/candide/calldata-SocialRecovery-7d.json": {
       "what": "Candide recovery, 7-day module: helpers, votes, start, finish, cancel",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours."
+      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours.",
+      "pr": 3189
     },
     "registry/candide/calldata-SocialRecovery-14d.json": {
       "what": "Candide recovery, 14-day module: helpers, votes, start, finish, cancel",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours."
+      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours.",
+      "pr": 3189
     },
     "registry/candide/calldata-SocialRecovery-60d.json": {
       "what": "Candide recovery, 60-day module: helpers, votes, start, finish, cancel",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours."
+      "note": "Same code as Candide's 7-day module; only the wait differs. 7-day is Candide's deployment, 14 and 60 ours.",
+      "pr": 3189
     },
     "registry/uniswap/calldata-SwapRouter02.json": {
       "what": "Uniswap SwapRouter02: swaps, multicall, unwrap/sweep, refund, wrap, on 5 chains",
@@ -72,21 +75,24 @@
     },
     "registry/candide/eip712-SocialRecovery-7d.json": {
       "what": "Candide recovery, 7-day module: a guardian's vote (signed message)",
-      "stage": "draft",
+      "stage": "pr",
       "show": false,
-      "note": "Wedgies read calldata only, so not in the build."
+      "note": "Wedgies read calldata only, so not in the build.",
+      "pr": 3189
     },
     "registry/candide/eip712-SocialRecovery-14d.json": {
       "what": "Candide recovery, 14-day module: a guardian's vote (signed message)",
-      "stage": "draft",
+      "stage": "pr",
       "show": false,
-      "note": "Wedgies read calldata only, so not in the build."
+      "note": "Wedgies read calldata only, so not in the build.",
+      "pr": 3189
     },
     "registry/candide/eip712-SocialRecovery-60d.json": {
       "what": "Candide recovery, 60-day module: a guardian's vote (signed message)",
-      "stage": "draft",
+      "stage": "pr",
       "show": false,
-      "note": "Wedgies read calldata only, so not in the build."
+      "note": "Wedgies read calldata only, so not in the build.",
+      "pr": 3189
     }
   },
   "hide": {},
