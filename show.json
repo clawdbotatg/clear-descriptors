@@ -14,7 +14,9 @@
   "registry/compound/calldata-CometUSDCv3.json",
   "registry/spark/calldata-sUSDC-1.json",
   "registry/spark/calldata-sUSDC-8453.json",
-  "registry/safe/calldata-AnySafe.json"
+  "registry/safe/calldata-AnySafe.json",
+  "registry/morpho/calldata-MorphoBlue.json",
+  "registry/weth/calldata-weth.json"
  ],
  "hide": [
   {
@@ -4720,7 +4722,7 @@
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0x04e45aaf",
    "file": "registry/uniswap/calldata-UniswapV3Router02.json",
-   "why": "clear-review F (truth 0, clarity 71)"
+   "why": "clear-review F (truth 0, clarity 68)"
   },
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0x09b81346",
@@ -4730,17 +4732,17 @@
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0x42712a67",
    "file": "registry/uniswap/calldata-UniswapV3Router02.json",
-   "why": "clear-review F (truth 0, clarity 49)"
+   "why": "clear-review F (truth 0, clarity 53)"
   },
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0x472b43f3",
    "file": "registry/uniswap/calldata-UniswapV3Router02.json",
-   "why": "clear-review F (truth 0, clarity 42)"
+   "why": "clear-review F (truth 0, clarity 48)"
   },
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0x5023b4df",
    "file": "registry/uniswap/calldata-UniswapV3Router02.json",
-   "why": "clear-review F (truth 0, clarity 75)"
+   "why": "clear-review F (truth 0, clarity 73)"
   },
   {
    "key": "1:0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45:0xb858183f",

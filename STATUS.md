@@ -26,6 +26,8 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/spark/calldata-sUSDC-1.json` | Spark Savings USDC (ERC-4626) on chain 1 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/spark/calldata-sUSDC-8453.json` | Spark Savings USDC (ERC-4626) on chain 8453 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/safe/calldata-AnySafe.json` | Safe approveHash on any Safe: an owner Safe approves another Safe's tx on chain | draft | — | ours |
+| `registry/morpho/calldata-MorphoBlue.json` | Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used | draft | — | ours |
+| `registry/weth/calldata-weth.json` | WETH wrap/unwrap on Base and Optimism (0x4200…0006), beside Ethereum's | draft | — | ours |
 
 ## Hidden by hand
 
@@ -114,5 +116,5 @@ A function graded F (its screen says something untrue or unreadable) isn't shown
 |---|---|
 | calldata descriptors | 616 |
 | audited (Cyfrin) | 164 |
-| graded by clear-review | 709 |
+| graded by clear-review | 738 |
 | with an F function | 68 |

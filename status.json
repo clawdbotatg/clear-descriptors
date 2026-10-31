@@ -120,6 +120,18 @@
       "stage": "draft",
       "show": true,
       "note": "Bound to the stand-in 0x7730\u20267730 (any contract), not in the spec: goes up with ThisSafe as a proposal. For wedgie.dev's nested Safes (wedgie-dev docs/PLAN-NESTED-SAFE.md)"
+    },
+    "registry/morpho/calldata-MorphoBlue.json": {
+      "what": "Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used",
+      "stage": "draft",
+      "show": true,
+      "note": "A Borrow on a wedgie was 14 pages, 6 of them the market's addresses twice (Austin, 10-31)"
+    },
+    "registry/weth/calldata-weth.json": {
+      "what": "WETH wrap/unwrap on Base and Optimism (0x4200\u20260006), beside Ethereum's",
+      "stage": "draft",
+      "show": true,
+      "note": "Unwrap after a Borrow of ETH read 'can't read this' on the wedgie (Austin, 10-31)"
     }
   },
   "hide": {},
