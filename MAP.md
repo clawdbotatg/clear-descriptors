@@ -26,7 +26,10 @@ decode a contract. (Austin, 10-31.)
 2. Unreadable call (⚠️) → write a descriptor here → PR it to the EF registry.
 3. A wrong EF descriptor → PR the fix (clear-review `docs/FIXING.md`).
 4. Every EF descriptor gets our robot check (clear-review). A pass = ✅ in our wallets. Re-run a round when the
-   registry moves: a changed file loses its ✅ (round 1, 10-27: 191 of 391 passed files still unchanged on 10-31).
+   registry moves: a changed file loses its ✅. Round 2 (10-31, registry 352c5b1): 3,350 functions signed. A round:
+   `./review.py sync`, `./review.py run` (only new or changed descriptors), `./sign.py round` (Austin's Touch ID),
+   then wedgie-dev `wire/review.py <registry> rounds/<n>.json public/clear/review`, push. Careful: `run` has no
+   `--help`; any `run` starts the real run.
 5. Get ours audited (an auditor's signature = 🛡️).
 6. Next: log every ⚠️ our apps hit (the to-do list of descriptors to write); report formatter bugs to Sourcify;
    point protocol teams at `clear-signing-skill`.
