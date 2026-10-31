@@ -39,6 +39,7 @@
       "exactInput((bytes path,address recipient,uint256 amountIn,uint256 amountOutMinimum) params)": {
         "intent": "Swap",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "params.amountIn",
             "label": "Pay",
@@ -80,6 +81,7 @@
       "exactInputSingle((address tokenIn,address tokenOut,uint24 fee,address recipient,uint256 amountIn,uint256 amountOutMinimum,uint160 sqrtPriceLimitX96) params)": {
         "intent": "Swap",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "params.amountIn",
             "label": "Pay",
@@ -121,6 +123,7 @@
       "exactOutput((bytes path,address recipient,uint256 amountOut,uint256 amountInMaximum) params)": {
         "intent": "Swap",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "params.amountOut",
             "label": "Get",
@@ -164,6 +167,7 @@
       "exactOutputSingle((address tokenIn,address tokenOut,uint24 fee,address recipient,uint256 amountOut,uint256 amountInMaximum,uint160 sqrtPriceLimitX96) params)": {
         "intent": "Swap",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "params.amountOut",
             "label": "Get",
@@ -207,6 +211,7 @@
       "swapExactTokensForTokens(uint256 amountIn,uint256 amountOutMin,address[] path,address to)": {
         "intent": "Swap (v2)",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "amountIn",
             "label": "Pay",
@@ -248,6 +253,7 @@
       "swapTokensForExactTokens(uint256 amountOut,uint256 amountInMax,address[] path,address to)": {
         "intent": "Swap (v2)",
         "fields": [
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "amountOut",
             "label": "Get",
@@ -528,7 +534,8 @@
             "label": "Step",
             "format": "calldata",
             "params": {
-              "calleePath": "@.to"
+              "calleePath": "@.to",
+              "amountPath": "@.value"
             }
           },
           {
@@ -560,7 +567,8 @@
             "label": "Step",
             "format": "calldata",
             "params": {
-              "calleePath": "@.to"
+              "calleePath": "@.to",
+              "amountPath": "@.value"
             }
           }
         ]
@@ -583,7 +591,8 @@
             "label": "Step",
             "format": "calldata",
             "params": {
-              "calleePath": "@.to"
+              "calleePath": "@.to",
+              "amountPath": "@.value"
             }
           }
         ]
