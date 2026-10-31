@@ -525,7 +525,7 @@
           },
           {
             "path": "data.[]",
-            "label": "",
+            "label": "Step",
             "format": "calldata",
             "params": {
               "calleePath": "@.to"
@@ -557,7 +557,7 @@
           },
           {
             "path": "data.[]",
-            "label": "",
+            "label": "Step",
             "format": "calldata",
             "params": {
               "calleePath": "@.to"
@@ -580,7 +580,7 @@
           },
           {
             "path": "data.[]",
-            "label": "",
+            "label": "Step",
             "format": "calldata",
             "params": {
               "calleePath": "@.to"
