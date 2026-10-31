@@ -51,11 +51,11 @@
   "display": {
     "formats": {
       "addGuardianWithThreshold(address _guardian,uint256 _threshold)": {
-        "intent": "Add recovery helper",
+        "intent": "Add recovery guardian",
         "fields": [
           {
             "path": "_guardian",
-            "label": "Helper",
+            "label": "Guardian",
             "format": "addressName",
             "params": {
               "types": [
@@ -71,7 +71,7 @@
           },
           {
             "path": "_threshold",
-            "label": "Helpers needed",
+            "label": "Guardians needed",
             "format": "raw"
           },
           {
@@ -80,14 +80,14 @@
             "format": "raw"
           }
         ],
-        "interpolatedIntent": "Add {_guardian} as a recovery helper. Helpers needed to replace this Safe's owners: {_threshold}"
+        "interpolatedIntent": "Add {_guardian} as a recovery guardian. Guardians needed to replace this Safe's owners: {_threshold}"
       },
       "revokeGuardianWithThreshold(address _prevGuardian,address _guardian,uint256 _threshold)": {
-        "intent": "Remove recovery helper",
+        "intent": "Remove recovery guardian",
         "fields": [
           {
             "path": "_guardian",
-            "label": "Helper",
+            "label": "Guardian",
             "format": "addressName",
             "params": {
               "types": [
@@ -103,27 +103,27 @@
           },
           {
             "path": "_threshold",
-            "label": "Helpers needed",
+            "label": "Guardians needed",
             "format": "raw"
           },
           {
             "path": "_prevGuardian",
             "visible": "never",
-            "label": "Previous helper"
+            "label": "Previous guardian"
           }
         ],
-        "interpolatedIntent": "Remove {_guardian} as a recovery helper. Helpers needed after this: {_threshold}"
+        "interpolatedIntent": "Remove {_guardian} as a recovery guardian. Guardians needed after this: {_threshold}"
       },
       "changeThreshold(uint256 _threshold)": {
-        "intent": "Change helpers needed",
+        "intent": "Change guardians needed",
         "fields": [
           {
             "path": "_threshold",
-            "label": "Helpers needed",
+            "label": "Guardians needed",
             "format": "raw"
           }
         ],
-        "interpolatedIntent": "Helpers needed to replace this Safe's owners: {_threshold}"
+        "interpolatedIntent": "Guardians needed to replace this Safe's owners: {_threshold}"
       },
       "cancelRecovery()": {
         "intent": "Cancel recovery",
@@ -131,7 +131,7 @@
         "interpolatedIntent": "Stop the recovery waiting on this Safe"
       },
       "invalidateNonce()": {
-        "intent": "Void helper votes",
+        "intent": "Void guardian votes",
         "fields": [],
         "interpolatedIntent": "Void the recovery votes not used yet. A recovery already waiting keeps going"
       },
@@ -231,7 +231,7 @@
           },
           {
             "path": "_signatures.[].signer",
-            "label": "Helper voting",
+            "label": "Guardian voting",
             "format": "addressName",
             "params": {
               "types": [
@@ -264,7 +264,7 @@
             "format": "raw"
           }
         ],
-        "interpolatedIntent": "Submit helper votes to make {_newOwners} the only owners of {_wallet}"
+        "interpolatedIntent": "Submit guardian votes to make {_newOwners} the only owners of {_wallet}"
       },
       "executeRecovery(address _wallet,address[] _newOwners,uint256 _newThreshold)": {
         "intent": "Start recovery wait",
@@ -332,7 +332,7 @@
             }
           }
         ],
-        "interpolatedIntent": "Remove every owner of {_wallet} and add the owners the helpers voted for"
+        "interpolatedIntent": "Remove every owner of {_wallet} and add the owners the guardians voted for"
       }
     }
   }

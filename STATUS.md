@@ -19,9 +19,9 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/uniswap/calldata-UniversalRouter-v2.0.json` | Uniswap Universal Router v2.0 (ERC-8362 commands) | draft | — | ours |
 | `registry/uniswap/calldata-UniversalRouter-v2.1.json` | Uniswap Universal Router v2.1 (ERC-8362 commands) | draft | — | ours |
 | `registry/lifi/calldata-LIFIDiamond-swaps.json` | LI.FI same-chain swaps + swapTokensGeneric, receiver must be this Safe (senderAddress @.from) | draft | — | ours |
-| `registry/candide/eip712-SocialRecovery-7d.json` | Candide recovery, 7-day module: a helper's vote (signed message) | draft | — | no |
-| `registry/candide/eip712-SocialRecovery-14d.json` | Candide recovery, 14-day module: a helper's vote (signed message) | draft | — | no |
-| `registry/candide/eip712-SocialRecovery-60d.json` | Candide recovery, 60-day module: a helper's vote (signed message) | draft | — | no |
+| `registry/candide/eip712-SocialRecovery-7d.json` | Candide recovery, 7-day module: a guardian's vote (signed message) | draft | — | no |
+| `registry/candide/eip712-SocialRecovery-14d.json` | Candide recovery, 14-day module: a guardian's vote (signed message) | draft | — | no |
+| `registry/candide/eip712-SocialRecovery-60d.json` | Candide recovery, 60-day module: a guardian's vote (signed message) | draft | — | no |
 
 ## Hidden by hand
 

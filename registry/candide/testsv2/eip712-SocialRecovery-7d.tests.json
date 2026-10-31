@@ -3,7 +3,7 @@
   "descriptor": "../eip712-SocialRecovery-7d.json",
   "tests": [
     {
-      "description": "Helper vote, signed by 0xf3a53C0666c5356600802A7422CA9344B9869FD6 (submitted in tx 0xb7af8ecd) - chain 1",
+      "description": "Guardian vote, signed by 0xf3a53C0666c5356600802A7422CA9344B9869FD6 (submitted in tx 0xb7af8ecd) - chain 1",
       "data": {
         "types": {
           "EIP712Domain": [

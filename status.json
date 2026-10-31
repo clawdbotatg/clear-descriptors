@@ -71,19 +71,19 @@
       "note": "Made by wedgie-dev tools/make_lifi.py from the registry file; replaces the registry's swaps"
     },
     "registry/candide/eip712-SocialRecovery-7d.json": {
-      "what": "Candide recovery, 7-day module: a helper's vote (signed message)",
+      "what": "Candide recovery, 7-day module: a guardian's vote (signed message)",
       "stage": "draft",
       "show": false,
       "note": "Wedgies read calldata only, so not in the build."
     },
     "registry/candide/eip712-SocialRecovery-14d.json": {
-      "what": "Candide recovery, 14-day module: a helper's vote (signed message)",
+      "what": "Candide recovery, 14-day module: a guardian's vote (signed message)",
       "stage": "draft",
       "show": false,
       "note": "Wedgies read calldata only, so not in the build."
     },
     "registry/candide/eip712-SocialRecovery-60d.json": {
-      "what": "Candide recovery, 60-day module: a helper's vote (signed message)",
+      "what": "Candide recovery, 60-day module: a guardian's vote (signed message)",
       "stage": "draft",
       "show": false,
       "note": "Wedgies read calldata only, so not in the build."

@@ -3,7 +3,7 @@
   "descriptor": "../eip712-SocialRecovery-14d.json",
   "tests": [
     {
-      "description": "Helper vote (the 7-day module's real vote, synthetic) - chain 1",
+      "description": "Guardian vote (the 7-day module's real vote, synthetic) - chain 1",
       "data": {
         "types": {
           "EIP712Domain": [
