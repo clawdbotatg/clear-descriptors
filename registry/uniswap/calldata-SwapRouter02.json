@@ -46,6 +46,11 @@
             "format": "tokenAmount",
             "params": {
               "tokenPath": "params.path.[0:20]"
+            },
+            "visible": {
+              "ifNotIn": [
+                "0"
+              ]
             }
           },
           {
@@ -69,11 +74,6 @@
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
               ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
-              ]
             }
           }
         ]
@@ -88,6 +88,11 @@
             "format": "tokenAmount",
             "params": {
               "tokenPath": "params.tokenIn"
+            },
+            "visible": {
+              "ifNotIn": [
+                "0"
+              ]
             }
           },
           {
@@ -96,6 +101,16 @@
             "format": "tokenAmount",
             "params": {
               "tokenPath": "params.tokenOut"
+            }
+          },
+          {
+            "path": "params.sqrtPriceLimitX96",
+            "label": "Price limit (may fill only part)",
+            "format": "raw",
+            "visible": {
+              "ifNotIn": [
+                "0"
+              ]
             }
           },
           {
@@ -110,11 +125,6 @@
               ],
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -155,11 +165,6 @@
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
               ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
-              ]
             }
           }
         ]
@@ -187,6 +192,16 @@
             }
           },
           {
+            "path": "params.sqrtPriceLimitX96",
+            "label": "Price limit (may fill only part)",
+            "format": "raw",
+            "visible": {
+              "ifNotIn": [
+                "0"
+              ]
+            }
+          },
+          {
             "path": "params.recipient",
             "label": "To",
             "format": "addressName",
@@ -198,11 +213,6 @@
               ],
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -218,6 +228,11 @@
             "format": "tokenAmount",
             "params": {
               "tokenPath": "path.[0]"
+            },
+            "visible": {
+              "ifNotIn": [
+                "0"
+              ]
             }
           },
           {
@@ -240,11 +255,6 @@
               ],
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -285,11 +295,6 @@
               "senderAddress": [
                 "0x0000000000000000000000000000000000000001"
               ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
-              ]
             }
           }
         ]
@@ -311,14 +316,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -351,14 +348,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           },
@@ -380,14 +369,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -413,14 +394,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -459,14 +432,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           },
@@ -488,14 +453,6 @@
                 "eoa",
                 "contract",
                 "wallet"
-              ],
-              "senderAddress": [
-                "0x0000000000000000000000000000000000000001"
-              ]
-            },
-            "visible": {
-              "ifNotIn": [
-                "0x0000000000000000000000000000000000000002"
               ]
             }
           }
@@ -519,16 +476,7 @@
       "multicall(uint256 deadline,bytes[] data)": {
         "intent": "Uniswap",
         "fields": [
-          {
-            "path": "@.value",
-            "label": "Send",
-            "format": "amount",
-            "visible": {
-              "ifNotIn": [
-                "0"
-              ]
-            }
-          },
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "data.[]",
             "label": "Step",
@@ -552,16 +500,7 @@
       "multicall(bytes32 previousBlockhash,bytes[] data)": {
         "intent": "Uniswap",
         "fields": [
-          {
-            "path": "@.value",
-            "label": "Send",
-            "format": "amount",
-            "visible": {
-              "ifNotIn": [
-                "0"
-              ]
-            }
-          },
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "data.[]",
             "label": "Step",
@@ -576,16 +515,7 @@
       "multicall(bytes[] data)": {
         "intent": "Uniswap",
         "fields": [
-          {
-            "path": "@.value",
-            "label": "Send",
-            "format": "amount",
-            "visible": {
-              "ifNotIn": [
-                "0"
-              ]
-            }
-          },
+          { "path": "@.value", "label": "Send", "format": "amount", "visible": { "ifNotIn": ["0"] } },
           {
             "path": "data.[]",
             "label": "Step",
