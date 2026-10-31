@@ -42,11 +42,11 @@
         ]
       },
       "withdraw(address asset, uint256 amount)": {
-        "intent": "Withdraw",
+        "intent": "Withdraw or borrow",
         "fields": [
           {
             "path": "amount",
-            "label": "Amount to withdraw",
+            "label": "Amount (borrows what you don't have)",
             "format": "tokenAmount",
             "params": {
               "tokenPath": "asset",

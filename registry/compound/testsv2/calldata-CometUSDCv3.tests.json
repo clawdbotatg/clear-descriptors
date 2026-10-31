@@ -49,11 +49,11 @@
       "description": "Withdraw - chain 8453",
       "rawTx": "0x02f8b3822105820118833e66a884016e3600830278e494b125e6687d4313864e53df431d5425969c15eb2f80b844f3fef3a3000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc001a016655c662451b5377763aa965ab46960822b8ef53208a33e1292e861d5d36318a006ad60c6b19c0b3e95e5004b87b7128403716da2188954d6b710ae25bf1dccb2",
       "expected": {
-        "intent": "Withdraw",
+        "intent": "Withdraw or borrow",
         "owner": "Compound",
         "fields": [
           {
-            "label": "Amount to withdraw",
+            "label": "Amount (borrows what you don't have)",
             "value": "Max USDC"
           }
         ]
@@ -77,11 +77,11 @@
       "description": "Withdraw - chain 1",
       "rawTx": "0x02f8b2018202a18477359400847d335e6a8304c2d494c3d688b66703497daa19211eedff47f25384cdc380b844f3fef3a3000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000000000000000000000000000000000000147d35700c001a0f189c86d34cc5496a4bb1cbee064a7b4ac7bd24e74d022d553a16f70ed7b1dfaa0598e92e94d6d4c4d7b921bfe32cd06ea20d9e102a8876ba634925f0fea717cc3",
       "expected": {
-        "intent": "Withdraw",
+        "intent": "Withdraw or borrow",
         "owner": "Compound",
         "fields": [
           {
-            "label": "Amount to withdraw",
+            "label": "Amount (borrows what you don't have)",
             "value": "5500 USDC"
           }
         ]
