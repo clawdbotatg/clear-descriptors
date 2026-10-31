@@ -22,6 +22,9 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/candide/eip712-SocialRecovery-7d.json` | Candide recovery, 7-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
 | `registry/candide/eip712-SocialRecovery-14d.json` | Candide recovery, 14-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
 | `registry/candide/eip712-SocialRecovery-60d.json` | Candide recovery, 60-day module: a guardian's vote (signed message) | pr | [#3189](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3189) | no |
+| `registry/compound/calldata-CometUSDCv3.json` | Compound v3 USDC market: supply, withdraw, on Ethereum and Base | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
+| `registry/spark/calldata-sUSDC-1.json` | Spark Savings USDC (ERC-4626) on chain 1 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
+| `registry/spark/calldata-sUSDC-8453.json` | Spark Savings USDC (ERC-4626) on chain 8453 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 
 ## Hidden by hand
 

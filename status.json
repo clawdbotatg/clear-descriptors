@@ -93,6 +93,27 @@
       "show": false,
       "note": "Wedgies read calldata only, so not in the build.",
       "pr": 3189
+    },
+    "registry/compound/calldata-CometUSDCv3.json": {
+      "what": "Compound v3 USDC market: supply, withdraw, on Ethereum and Base",
+      "stage": "pr",
+      "pr": 3190,
+      "show": true,
+      "note": "Instant Wallet's Earn uses these; its Activity showed only coins for them (Austin 10-30)."
+    },
+    "registry/spark/calldata-sUSDC-1.json": {
+      "what": "Spark Savings USDC (ERC-4626) on chain 1",
+      "stage": "pr",
+      "pr": 3190,
+      "show": true,
+      "note": "Instant Wallet's Earn uses these; its Activity showed only coins for them (Austin 10-30)."
+    },
+    "registry/spark/calldata-sUSDC-8453.json": {
+      "what": "Spark Savings USDC (ERC-4626) on chain 8453",
+      "stage": "pr",
+      "pr": 3190,
+      "show": true,
+      "note": "Instant Wallet's Earn uses these; its Activity showed only coins for them (Austin 10-30)."
     }
   },
   "hide": {},

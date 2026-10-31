@@ -10,7 +10,10 @@
   "registry/uniswap/calldata-SwapRouter02.json",
   "registry/uniswap/calldata-UniversalRouter-v2.0.json",
   "registry/uniswap/calldata-UniversalRouter-v2.1.json",
-  "registry/lifi/calldata-LIFIDiamond-swaps.json"
+  "registry/lifi/calldata-LIFIDiamond-swaps.json",
+  "registry/compound/calldata-CometUSDCv3.json",
+  "registry/spark/calldata-sUSDC-1.json",
+  "registry/spark/calldata-sUSDC-8453.json"
  ],
  "hide": [
   {
