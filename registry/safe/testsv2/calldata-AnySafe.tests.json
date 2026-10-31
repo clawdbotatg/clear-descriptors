@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../specs/erc7730-tests-v2.schema.json",
+  "descriptor": "../calldata-AnySafe.json",
+  "tests": [
+    {
+      "description": "Approve a Safe tx (an owner Safe approves another Safe's tx hash) - chain 8453",
+      "rawTx": "0x02f84d82210580830f4240843b9aca00830186a094773077307730773077307730773077307730773080a4d4d9bdcdababababababababababababababababababababababababababababababababc0",
+      "from": "0xa11ce00000000000000000000000000000000a11",
+      "expected": {
+        "intent": "Approve a Safe tx",
+        "owner": "Safe",
+        "fields": [
+          {
+            "label": "On Safe",
+            "value": "0x7730773077307730773077307730773077307730"
+          }
+        ]
+      }
+    }
+  ]
+}

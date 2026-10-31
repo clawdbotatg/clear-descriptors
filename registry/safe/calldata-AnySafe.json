@@ -1,0 +1,109 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "$id": "Any Safe",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 10,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 56,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 100,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 137,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 146,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 999,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 4663,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 5042,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 8453,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 9745,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 42161,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 42220,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 43114,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 84532,
+          "address": "0x7730773077307730773077307730773077307730"
+        },
+        {
+          "chainId": 11155111,
+          "address": "0x7730773077307730773077307730773077307730"
+        }
+      ]
+    },
+    "$comment": "0x7730...7730: not a contract. Safe Signer reads a call to an address with no descriptor of its own with this (wedgie-safe safe_book.ANY). approveHash: an owner (often a Safe) approves another Safe's tx on chain."
+  },
+  "metadata": {
+    "owner": "Safe",
+    "contractName": "a Safe",
+    "info": {
+      "url": "https://github.com/safe-global/safe-smart-account"
+    }
+  },
+  "display": {
+    "formats": {
+      "approveHash(bytes32 hashToApprove)": {
+        "intent": "Approve a Safe tx",
+        "fields": [
+          {
+            "path": "@.to",
+            "label": "On Safe",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "contract"
+              ],
+              "sources": [
+                "local"
+              ]
+            }
+          },
+          {
+            "path": "hashToApprove",
+            "label": "Tx hash",
+            "format": "raw"
+          }
+        ]
+      }
+    }
+  }
+}

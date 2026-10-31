@@ -114,6 +114,12 @@
       "pr": 3190,
       "show": true,
       "note": "Instant Wallet's Earn uses these; its Activity showed only coins for them (Austin 10-30)."
+    },
+    "registry/safe/calldata-AnySafe.json": {
+      "what": "Safe approveHash on any Safe: an owner Safe approves another Safe's tx on chain",
+      "stage": "draft",
+      "show": true,
+      "note": "Bound to the stand-in 0x7730\u20267730 (any contract), not in the spec: goes up with ThisSafe as a proposal. For wedgie.dev's nested Safes (wedgie-dev docs/PLAN-NESTED-SAFE.md)"
     }
   },
   "hide": {},

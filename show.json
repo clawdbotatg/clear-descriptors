@@ -13,7 +13,8 @@
   "registry/lifi/calldata-LIFIDiamond-swaps.json",
   "registry/compound/calldata-CometUSDCv3.json",
   "registry/spark/calldata-sUSDC-1.json",
-  "registry/spark/calldata-sUSDC-8453.json"
+  "registry/spark/calldata-sUSDC-8453.json",
+  "registry/safe/calldata-AnySafe.json"
  ],
  "hide": [
   {

@@ -25,6 +25,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/compound/calldata-CometUSDCv3.json` | Compound v3 USDC market: supply, withdraw, on Ethereum and Base | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/spark/calldata-sUSDC-1.json` | Spark Savings USDC (ERC-4626) on chain 1 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/spark/calldata-sUSDC-8453.json` | Spark Savings USDC (ERC-4626) on chain 8453 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
+| `registry/safe/calldata-AnySafe.json` | Safe approveHash on any Safe: an owner Safe approves another Safe's tx on chain | draft | — | ours |
 
 ## Hidden by hand
 
@@ -112,6 +113,6 @@ A function graded F (its screen says something untrue or unreadable) isn't shown
 | | Files |
 |---|---|
 | calldata descriptors | 616 |
-| audited (Cyfrin) | 161 |
+| audited (Cyfrin) | 164 |
 | graded by clear-review | 709 |
 | with an F function | 68 |
