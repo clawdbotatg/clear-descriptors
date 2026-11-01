@@ -31,8 +31,9 @@ decode a contract. (Austin, 10-31.)
    then wedgie-dev `wire/review.py <registry> rounds/<n>.json public/clear/review`, push. Careful: `run` has no
    `--help`; any `run` starts the real run.
 5. Get ours audited (an auditor's signature = 🛡️).
-6. Next: log every ⚠️ our apps hit (the to-do list of descriptors to write); report formatter bugs to Sourcify;
-   point protocol teams at `clear-signing-skill`.
+6. Every ⚠️ our wallets hit is counted at wedgie.dev/api/misses (chain, contract, function; both apps' `/api/explain`
+   report it). `python3 tools/misses.py` lists them, most seen first: the descriptors to write next.
+7. Next: report formatter bugs to Sourcify; point protocol teams at `clear-signing-skill`.
 
 ## How a tx gets its words (both wallets)
 
