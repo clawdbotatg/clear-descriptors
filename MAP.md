@@ -60,5 +60,7 @@ Every address in the words is drawn with the address component (blockie), never 
 ## Gotchas
 
 - Sourcify's formatter drops a whole call if any field has an empty `label` (`INVALID_DESCRIPTOR`): shows as ⚠️.
+- Sourcify's formatter can't read the Safe MultiSend descriptor (packed bytes, `customEncoding`): only the wedgie
+  can. The wallets open Safe batches themselves (Instant Wallet `callsOf`, every Safe MultiSend version).
 - The kit's server caches the descriptor index for an hour: a new descriptor here shows up within the hour, no deploy.
 - A kit change reaches the apps only when each pins the new commit in its `package.json`.

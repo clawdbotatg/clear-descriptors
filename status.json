@@ -132,6 +132,24 @@
       "stage": "draft",
       "show": true,
       "note": "Unwrap after a Borrow of ETH read 'can't read this' on the wedgie (Austin, 10-31)"
+    },
+    "registry/ens/calldata-ETHRegistrar-v2.json": {
+      "what": "ENS v2 name registration (commit, register; pays in USDC)",
+      "stage": "draft",
+      "show": true,
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
+    },
+    "registry/ens/calldata-ReverseRegistrar.json": {
+      "what": "ENS primary name (setName, setNameForAddr)",
+      "stage": "draft",
+      "show": true,
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
+    },
+    "registry/ens/calldata-VerifiableFactory.json": {
+      "what": "ENS v2 factory deployProxy (makes a name's resolver)",
+      "stage": "draft",
+      "show": true,
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
     }
   },
   "hide": {},

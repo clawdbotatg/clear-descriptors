@@ -16,7 +16,10 @@
   "registry/spark/calldata-sUSDC-8453.json",
   "registry/safe/calldata-AnySafe.json",
   "registry/morpho/calldata-MorphoBlue.json",
-  "registry/weth/calldata-weth.json"
+  "registry/weth/calldata-weth.json",
+  "registry/ens/calldata-ETHRegistrar-v2.json",
+  "registry/ens/calldata-ReverseRegistrar.json",
+  "registry/ens/calldata-VerifiableFactory.json"
  ],
  "hide": [
   {

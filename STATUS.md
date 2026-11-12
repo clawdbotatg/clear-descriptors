@@ -28,6 +28,9 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/safe/calldata-AnySafe.json` | Safe approveHash on any Safe: an owner Safe approves another Safe's tx on chain | draft | — | ours |
 | `registry/morpho/calldata-MorphoBlue.json` | Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used | draft | — | ours |
 | `registry/weth/calldata-weth.json` | WETH wrap/unwrap on Base and Optimism (0x4200…0006), beside Ethereum's | draft | — | ours |
+| `registry/ens/calldata-ETHRegistrar-v2.json` | ENS v2 name registration (commit, register; pays in USDC) | draft | — | ours |
+| `registry/ens/calldata-ReverseRegistrar.json` | ENS primary name (setName, setNameForAddr) | draft | — | ours |
+| `registry/ens/calldata-VerifiableFactory.json` | ENS v2 factory deployProxy (makes a name's resolver) | draft | — | ours |
 
 ## Hidden by hand
 
