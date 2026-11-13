@@ -123,33 +123,38 @@
     },
     "registry/morpho/calldata-MorphoBlue.json": {
       "what": "Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "A Borrow on a wedgie was 14 pages, 6 of them the market's addresses twice (Austin, 10-31)"
+      "note": "A Borrow on a wedgie was 14 pages, 6 of them the market's addresses twice (Austin, 10-31)",
+      "pr": 3226
     },
     "registry/weth/calldata-weth.json": {
       "what": "WETH wrap/unwrap on Base and Optimism (0x4200\u20260006), beside Ethereum's",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Unwrap after a Borrow of ETH read 'can't read this' on the wedgie (Austin, 10-31)"
+      "note": "Unwrap after a Borrow of ETH read 'can't read this' on the wedgie (Austin, 10-31)",
+      "pr": 3225
     },
     "registry/ens/calldata-ETHRegistrar-v2.json": {
       "what": "ENS v2 name registration (commit, register; pays in USDC)",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)",
+      "pr": 3224
     },
     "registry/ens/calldata-ReverseRegistrar.json": {
       "what": "ENS primary name (setName, setNameForAddr)",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)",
+      "pr": 3224
     },
     "registry/ens/calldata-VerifiableFactory.json": {
       "what": "ENS v2 factory deployProxy (makes a name's resolver)",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)"
+      "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)",
+      "pr": 3224
     }
   },
   "hide": {},

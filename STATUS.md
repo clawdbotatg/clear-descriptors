@@ -26,11 +26,11 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/spark/calldata-sUSDC-1.json` | Spark Savings USDC (ERC-4626) on chain 1 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/spark/calldata-sUSDC-8453.json` | Spark Savings USDC (ERC-4626) on chain 8453 | pr | [#3190](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3190) | ours |
 | `registry/safe/calldata-AnySafe.json` | Safe approveHash on any Safe: an owner Safe approves another Safe's tx on chain | draft | — | ours |
-| `registry/morpho/calldata-MorphoBlue.json` | Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used | draft | — | ours |
-| `registry/weth/calldata-weth.json` | WETH wrap/unwrap on Base and Optimism (0x4200…0006), beside Ethereum's | draft | — | ours |
-| `registry/ens/calldata-ETHRegistrar-v2.json` | ENS v2 name registration (commit, register; pays in USDC) | draft | — | ours |
-| `registry/ens/calldata-ReverseRegistrar.json` | ENS primary name (setName, setNameForAddr) | draft | — | ours |
-| `registry/ens/calldata-VerifiableFactory.json` | ENS v2 factory deployProxy (makes a name's resolver) | draft | — | ours |
+| `registry/morpho/calldata-MorphoBlue.json` | Morpho Blue, short: plain intents (Borrow, Put up collateral, Repay, Take back collateral, Lend, Withdraw); the market's tokens, oracle and rate model hidden (the amounts name the tokens); max loan-to-value kept; shares only when used | pr | [#3226](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3226) | ours |
+| `registry/weth/calldata-weth.json` | WETH wrap/unwrap on Base and Optimism (0x4200…0006), beside Ethereum's | pr | [#3225](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3225) | ours |
+| `registry/ens/calldata-ETHRegistrar-v2.json` | ENS v2 name registration (commit, register; pays in USDC) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
+| `registry/ens/calldata-ReverseRegistrar.json` | ENS primary name (setName, setNameForAddr) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
+| `registry/ens/calldata-VerifiableFactory.json` | ENS v2 factory deployProxy (makes a name's resolver) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
 
 ## Hidden by hand
 
@@ -117,7 +117,7 @@ A function graded F (its screen says something untrue or unreadable) isn't shown
 
 | | Files |
 |---|---|
-| calldata descriptors | 616 |
+| calldata descriptors | 638 |
 | audited (Cyfrin) | 164 |
 | graded by clear-review | 738 |
 | with an F function | 68 |
