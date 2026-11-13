@@ -22,7 +22,9 @@
   "registry/ens/calldata-VerifiableFactory.json",
   "registry/ercs/calldata-erc20-transferFrom.json",
   "registry/multicall/calldata-Multicall3.json",
-  "registry/0x/calldata-AllowanceHolder.json"
+  "registry/0x/calldata-AllowanceHolder.json",
+  "registry/relay/calldata-RelayRouter.json",
+  "registry/relay/calldata-RelayApprovalProxy.json"
  ],
  "hide": [
   {
