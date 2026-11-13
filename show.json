@@ -19,7 +19,8 @@
   "registry/weth/calldata-weth.json",
   "registry/ens/calldata-ETHRegistrar-v2.json",
   "registry/ens/calldata-ReverseRegistrar.json",
-  "registry/ens/calldata-VerifiableFactory.json"
+  "registry/ens/calldata-VerifiableFactory.json",
+  "registry/ercs/calldata-erc20-transferFrom.json"
  ],
  "hide": [
   {

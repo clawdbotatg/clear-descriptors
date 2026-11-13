@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../specs/erc7730-tests-v2.schema.json",
+  "descriptor": "../calldata-erc20-transferFrom.json",
+  "tests": [
+    {
+      "description": "transferFrom 98.04 USDC (a real mainnet tx, rebuilt unsigned) - chain 1",
+      "rawTx": "0x02f88f018201098402faf080840949983c830493e094a0b86991c6218b36c1d19d4a2e9eb0ce3606eb4880b86423b872dd0000000000000000000000004c2c0f0bb2631b02ac9299c59690914ee7a200b8000000000000000000000000192472201c3c0eb8434436488656e8b74d016eae0000000000000000000000000000000000000000000000000000000005d7f8c0c0",
+      "expected": {
+        "intent": "Send from another account",
+        "fields": [
+          {
+            "label": "Amount",
+            "value": "98.04 USDC"
+          },
+          {
+            "label": "From",
+            "value": "0x4c2C0F0bB2631B02ac9299C59690914ee7a200b8"
+          },
+          {
+            "label": "To",
+            "value": "0x192472201C3c0eB8434436488656e8B74d016eAe"
+          }
+        ]
+      }
+    }
+  ]
+}
