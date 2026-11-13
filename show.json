@@ -20,7 +20,9 @@
   "registry/ens/calldata-ETHRegistrar-v2.json",
   "registry/ens/calldata-ReverseRegistrar.json",
   "registry/ens/calldata-VerifiableFactory.json",
-  "registry/ercs/calldata-erc20-transferFrom.json"
+  "registry/ercs/calldata-erc20-transferFrom.json",
+  "registry/multicall/calldata-Multicall3.json",
+  "registry/0x/calldata-AllowanceHolder.json"
  ],
  "hide": [
   {
