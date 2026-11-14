@@ -188,8 +188,9 @@
     },
     "registry/0x/calldata-Settler.json": {
       "what": "0x Settler execute: receive at least, receiver. Today's feature-2 Settler per chain (0x Deployer ownerOf(2)); goes stale when 0x redeploys (wedgie-dev docs/PLAN-REDEPLOYED-CONTRACTS.md)",
-      "stage": "draft",
-      "show": true
+      "stage": "pr",
+      "show": true,
+      "pr": 3228
     },
     "registry/llamapay/calldata-LlamaPay-USDC-1.json": {
       "what": "LlamaPay USDC streams on Ethereum (deposit, withdraw, start/pause/cancel/change a stream)",
