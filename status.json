@@ -143,7 +143,7 @@
       "pr": 3224
     },
     "registry/ens/calldata-ReverseRegistrar.json": {
-      "what": "ENS primary name (setName, setNameForAddr)",
+      "what": "ENS primary name (setName)",
       "stage": "pr",
       "show": true,
       "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)",
