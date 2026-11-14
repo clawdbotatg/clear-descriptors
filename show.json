@@ -25,7 +25,8 @@
   "registry/0x/calldata-AllowanceHolder.json",
   "registry/relay/calldata-RelayRouter.json",
   "registry/relay/calldata-RelayApprovalProxy.json",
-  "registry/0x/calldata-Settler.json"
+  "registry/0x/calldata-Settler.json",
+  "registry/llamapay/calldata-LlamaPay-USDC-1.json"
  ],
  "hide": [
   {

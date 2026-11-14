@@ -37,6 +37,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/relay/calldata-RelayRouter.json` | Relay router: multicall (swap or bridge) and its four cleanup functions | pr | [#3222](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3222) | ours |
 | `registry/relay/calldata-RelayApprovalProxy.json` | Relay approval proxy transferAndMulticall | pr | [#3222](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3222) | ours |
 | `registry/0x/calldata-Settler.json` | 0x Settler execute: receive at least, receiver. Today's feature-2 Settler per chain (0x Deployer ownerOf(2)); goes stale when 0x redeploys (wedgie-dev docs/PLAN-REDEPLOYED-CONTRACTS.md) | draft | — | ours |
+| `registry/llamapay/calldata-LlamaPay-USDC-1.json` | LlamaPay USDC streams on Ethereum (deposit, withdraw, start/pause/cancel/change a stream) | pr | [#3227](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3227) | ours |
 
 ## Hidden by hand
 
