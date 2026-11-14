@@ -155,6 +155,41 @@
       "show": true,
       "note": "Unreadable in Instant Wallet (wedgie.dev/api/misses, 11-11: 16 hits each)",
       "pr": 3224
+    },
+    "registry/ercs/calldata-erc20-transferFrom.json": {
+      "what": "ERC-20 transferFrom on any token (send from another account)",
+      "stage": "pr",
+      "show": true,
+      "pr": 3219
+    },
+    "registry/multicall/calldata-Multicall3.json": {
+      "what": "Multicall3 aggregate3, aggregate3Value, aggregate, tryAggregate: each call inside",
+      "stage": "pr",
+      "show": true,
+      "pr": 3220
+    },
+    "registry/0x/calldata-AllowanceHolder.json": {
+      "what": "0x AllowanceHolder exec: what a swap may take, and the Settler call inside",
+      "stage": "pr",
+      "show": true,
+      "pr": 3221
+    },
+    "registry/relay/calldata-RelayRouter.json": {
+      "what": "Relay router: multicall (swap or bridge) and its four cleanup functions",
+      "stage": "pr",
+      "show": true,
+      "pr": 3222
+    },
+    "registry/relay/calldata-RelayApprovalProxy.json": {
+      "what": "Relay approval proxy transferAndMulticall",
+      "stage": "pr",
+      "show": true,
+      "pr": 3222
+    },
+    "registry/0x/calldata-Settler.json": {
+      "what": "0x Settler execute: receive at least, receiver. Today's feature-2 Settler per chain (0x Deployer ownerOf(2)); goes stale when 0x redeploys (wedgie-dev docs/PLAN-REDEPLOYED-CONTRACTS.md)",
+      "stage": "draft",
+      "show": true
     }
   },
   "hide": {},

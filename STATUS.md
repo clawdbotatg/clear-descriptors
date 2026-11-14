@@ -31,6 +31,12 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/ens/calldata-ETHRegistrar-v2.json` | ENS v2 name registration (commit, register; pays in USDC) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
 | `registry/ens/calldata-ReverseRegistrar.json` | ENS primary name (setName, setNameForAddr) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
 | `registry/ens/calldata-VerifiableFactory.json` | ENS v2 factory deployProxy (makes a name's resolver) | pr | [#3224](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3224) | ours |
+| `registry/ercs/calldata-erc20-transferFrom.json` | ERC-20 transferFrom on any token (send from another account) | pr | [#3219](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3219) | ours |
+| `registry/multicall/calldata-Multicall3.json` | Multicall3 aggregate3, aggregate3Value, aggregate, tryAggregate: each call inside | pr | [#3220](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3220) | ours |
+| `registry/0x/calldata-AllowanceHolder.json` | 0x AllowanceHolder exec: what a swap may take, and the Settler call inside | pr | [#3221](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3221) | ours |
+| `registry/relay/calldata-RelayRouter.json` | Relay router: multicall (swap or bridge) and its four cleanup functions | pr | [#3222](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3222) | ours |
+| `registry/relay/calldata-RelayApprovalProxy.json` | Relay approval proxy transferAndMulticall | pr | [#3222](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3222) | ours |
+| `registry/0x/calldata-Settler.json` | 0x Settler execute: receive at least, receiver. Today's feature-2 Settler per chain (0x Deployer ownerOf(2)); goes stale when 0x redeploys (wedgie-dev docs/PLAN-REDEPLOYED-CONTRACTS.md) | draft | — | ours |
 
 ## Hidden by hand
 
