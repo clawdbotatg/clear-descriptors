@@ -41,6 +41,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/compound/calldata-CometWETHv3.json` | Compound v3 WETH market: supply, withdraw, on Ethereum and Base | pr | [#3229](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3229) | ours |
 | `registry/metamask/calldata-MetaSwap.json` | MetaMask swap router (Ethereum): send, receive at least, route | pr | [#3230](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3230) | ours |
 | `registry/metamask/calldata-MetaBridge.json` | MetaMask bridge router (Ethereum): send, to chain, route | pr | [#3230](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3230) | ours |
+| `registry/uniswap/calldata-Permit2.json` | Permit2 approve: spender, amount (max = Unlimited), until when | pr | [#3231](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3231) | ours |
 
 ## Hidden by hand
 

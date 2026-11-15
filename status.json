@@ -219,6 +219,13 @@
       "show": true,
       "note": "22,512 mainnet txs a week (11-14). The receiver is inside the adapter's own data, not shown",
       "pr": 3230
+    },
+    "registry/uniswap/calldata-Permit2.json": {
+      "what": "Permit2 approve: spender, amount (max = Unlimited), until when",
+      "stage": "pr",
+      "show": true,
+      "note": "4,161 mainnet txs a week (11-14), no calldata descriptor",
+      "pr": 3231
     }
   },
   "hide": {},
