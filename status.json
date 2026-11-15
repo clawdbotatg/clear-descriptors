@@ -201,9 +201,10 @@
     },
     "registry/compound/calldata-CometWETHv3.json": {
       "what": "Compound v3 WETH market: supply, withdraw, on Ethereum and Base",
-      "stage": "draft",
+      "stage": "pr",
       "show": true,
-      "note": "Instant Wallet's Earn (ETH) and Borrow (ETH loans) use these (Austin 11-14)."
+      "note": "Instant Wallet's Earn (ETH) and Borrow (ETH loans) use these (Austin 11-14).",
+      "pr": 3229
     }
   },
   "hide": {},

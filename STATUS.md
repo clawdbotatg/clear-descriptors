@@ -38,7 +38,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/relay/calldata-RelayApprovalProxy.json` | Relay approval proxy transferAndMulticall | pr | [#3222](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3222) | ours |
 | `registry/0x/calldata-Settler.json` | 0x Settler execute: receive at least, receiver. Today's feature-2 Settler per chain (0x Deployer ownerOf(2)); goes stale when 0x redeploys (wedgie-dev docs/PLAN-REDEPLOYED-CONTRACTS.md) | pr | [#3228](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3228) | ours |
 | `registry/llamapay/calldata-LlamaPay-USDC-1.json` | LlamaPay USDC streams on Ethereum (deposit, withdraw, start/pause/cancel/change a stream) | pr | [#3227](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3227) | ours |
-| `registry/compound/calldata-CometWETHv3.json` | Compound v3 WETH market: supply, withdraw, on Ethereum and Base | draft | — | ours |
+| `registry/compound/calldata-CometWETHv3.json` | Compound v3 WETH market: supply, withdraw, on Ethereum and Base | pr | [#3229](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3229) | ours |
 
 ## Hidden by hand
 
