@@ -27,7 +27,9 @@
   "registry/relay/calldata-RelayApprovalProxy.json",
   "registry/0x/calldata-Settler.json",
   "registry/llamapay/calldata-LlamaPay-USDC-1.json",
-  "registry/compound/calldata-CometWETHv3.json"
+  "registry/compound/calldata-CometWETHv3.json",
+  "registry/metamask/calldata-MetaSwap.json",
+  "registry/metamask/calldata-MetaBridge.json"
  ],
  "hide": [
   {
