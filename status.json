@@ -198,6 +198,12 @@
       "pr": 3227,
       "show": true,
       "note": "Top \u26a0\ufe0f on wedgie.dev/api/misses (11-14)"
+    },
+    "registry/compound/calldata-CometWETHv3.json": {
+      "what": "Compound v3 WETH market: supply, withdraw, on Ethereum and Base",
+      "stage": "draft",
+      "show": true,
+      "note": "Instant Wallet's Earn (ETH) and Borrow (ETH loans) use these (Austin 11-14)."
     }
   },
   "hide": {},
