@@ -226,6 +226,13 @@
       "show": true,
       "note": "4,161 mainnet txs a week (11-14), no calldata descriptor",
       "pr": 3231
+    },
+    "registry/circle/calldata-TokenMessengerV2.json": {
+      "what": "Circle CCTP V2 USDC bridge (6 chains): amount, destination domain, recipient, max fee",
+      "stage": "pr",
+      "show": true,
+      "note": "The registry's descriptor lists only Polygon; same contract on Ethereum, Optimism, Base, Arbitrum, Linea (Sourcify-verified). ~6,700 mainnet txs a week (11-15).",
+      "pr": 3234
     }
   },
   "hide": {},

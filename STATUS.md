@@ -42,6 +42,7 @@ Stages: **draft** (here only) → **pr** (open on the registry) → **merged** (
 | `registry/metamask/calldata-MetaSwap.json` | MetaMask swap router (9 chains): send, receive at least, route | pr | [#3230](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3230) | ours |
 | `registry/metamask/calldata-MetaBridge.json` | MetaMask bridge router (9 chains): send, to chain, route | pr | [#3230](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3230) | ours |
 | `registry/uniswap/calldata-Permit2.json` | Permit2 approve: spender, amount (max = Unlimited), until when | pr | [#3231](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3231) | ours |
+| `registry/circle/calldata-TokenMessengerV2.json` | Circle CCTP V2 USDC bridge (6 chains): amount, destination domain, recipient, max fee | pr | [#3234](https://github.com/ethereum/clear-signing-erc7730-registry/pull/3234) | ours |
 
 ## Hidden by hand
 
