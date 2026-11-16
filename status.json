@@ -207,14 +207,14 @@
       "pr": 3229
     },
     "registry/metamask/calldata-MetaSwap.json": {
-      "what": "MetaMask swap router (Ethereum): send, receive at least, route",
+      "what": "MetaMask swap router (9 chains): send, receive at least, route",
       "stage": "pr",
       "show": true,
       "note": "28,627 mainnet txs a week (11-14), no descriptor. Receive-at-least is read from the adapter data by byte offset: one layout in 183 sampled swaps over 5 adapters",
       "pr": 3230
     },
     "registry/metamask/calldata-MetaBridge.json": {
-      "what": "MetaMask bridge router (Ethereum): send, to chain, route",
+      "what": "MetaMask bridge router (9 chains): send, to chain, route",
       "stage": "pr",
       "show": true,
       "note": "22,512 mainnet txs a week (11-14). The receiver is inside the adapter's own data, not shown",
