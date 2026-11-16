@@ -31,7 +31,9 @@
   "registry/metamask/calldata-MetaSwap.json",
   "registry/metamask/calldata-MetaBridge.json",
   "registry/uniswap/calldata-Permit2.json",
-  "registry/circle/calldata-TokenMessengerV2.json"
+  "registry/circle/calldata-TokenMessengerV2.json",
+  "registry/swft/calldata-SwftSwap.json",
+  "registry/base/calldata-OptimismPortal2.json"
  ],
  "hide": [
   {

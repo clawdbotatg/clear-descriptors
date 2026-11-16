@@ -233,6 +233,18 @@
       "show": true,
       "note": "The registry's descriptor lists only Polygon; same contract on Ethereum, Optimism, Base, Arbitrum, Linea (Sourcify-verified). ~6,700 mainnet txs a week (11-15).",
       "pr": 3234
+    },
+    "registry/swft/calldata-SwftSwap.json": {
+      "what": "SWFT cross-chain swap: the registry's, notes cut to 32 bytes",
+      "stage": "draft",
+      "show": true,
+      "note": "The registry's file is fine; its 65-byte note is over the wedgie's 32-byte limit for fixed text, so the wedgie skipped the whole file. ~15,000 mainnet swaps a week (11-16)."
+    },
+    "registry/base/calldata-OptimismPortal2.json": {
+      "what": "Base OptimismPortal2 (L1 deposits): the registry's, note cut to 32 bytes",
+      "stage": "draft",
+      "show": true,
+      "note": "Same as SWFT: a 140-byte note made the wedgie skip the file. 709 mainnet txs a week (11-16)."
     }
   },
   "hide": {},
